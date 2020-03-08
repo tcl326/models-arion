@@ -1,0 +1,608 @@
+I1218 15:26:03.133821 140420909930240 cluster.py:45] ClusterSpec: {'worker': ['localhost:15000']}
+W1218 15:26:03.780411 140420909930240 deprecation.py:323] From /storage/baoyu/arion/env/lib/python3.6/site-packages/tensorflow_core/python/ops/image_ops_impl.py:2547: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W1218 15:26:03.991870 140420909930240 deprecation.py:506] From /storage/baoyu/arion/env/lib/python3.6/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1637: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+I1218 15:26:04.160251 140420909930240 graph_item.py:48] Patched optimizer: Adam 
+with args: (<tensorflow.python.keras.optimizer_v2.adam.Adam object at 0x7fb5cc140ba8>,) 
+kwargs: {'learning_rate': 0.01, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-08}
+I1218 15:26:04.274219 140420909930240 graph_item.py:64] Registered grads: 
+ [<tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 3, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 64, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 64, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 256) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(256,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(256,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv3/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv3/BiasAdd_grad/BiasAddGrad:0' shape=(256,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 256, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv3/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv3/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv3/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv3/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc1/MatMul_grad/MatMul_1:0' shape=(25088, 4096) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc1/BiasAdd_grad/BiasAddGrad:0' shape=(4096,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc2/MatMul_grad/MatMul_1:0' shape=(4096, 4096) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc2/BiasAdd_grad/BiasAddGrad:0' shape=(4096,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/predictions/MatMul_grad/MatMul_1:0' shape=(4096, 1001) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/predictions/BiasAdd_grad/BiasAddGrad:0' shape=(1001,) dtype=float32>] with targets: 
+ [<tf.Variable 'block1_conv1/kernel:0' shape=(3, 3, 3, 64) dtype=float32>, <tf.Variable 'block1_conv1/bias:0' shape=(64,) dtype=float32>, <tf.Variable 'block1_conv2/kernel:0' shape=(3, 3, 64, 64) dtype=float32>, <tf.Variable 'block1_conv2/bias:0' shape=(64,) dtype=float32>, <tf.Variable 'block2_conv1/kernel:0' shape=(3, 3, 64, 128) dtype=float32>, <tf.Variable 'block2_conv1/bias:0' shape=(128,) dtype=float32>, <tf.Variable 'block2_conv2/kernel:0' shape=(3, 3, 128, 128) dtype=float32>, <tf.Variable 'block2_conv2/bias:0' shape=(128,) dtype=float32>, <tf.Variable 'block3_conv1/kernel:0' shape=(3, 3, 128, 256) dtype=float32>, <tf.Variable 'block3_conv1/bias:0' shape=(256,) dtype=float32>, <tf.Variable 'block3_conv2/kernel:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv2/bias:0' shape=(256,) dtype=float32>, <tf.Variable 'block3_conv3/kernel:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv3/bias:0' shape=(256,) dtype=float32>, <tf.Variable 'block4_conv1/kernel:0' shape=(3, 3, 256, 512) dtype=float32>, <tf.Variable 'block4_conv1/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block4_conv2/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv2/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block4_conv3/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv3/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block5_conv1/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv1/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block5_conv2/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv2/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block5_conv3/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv3/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'fc1/kernel:0' shape=(25088, 4096) dtype=float32>, <tf.Variable 'fc1/bias:0' shape=(4096,) dtype=float32>, <tf.Variable 'fc2/kernel:0' shape=(4096, 4096) dtype=float32>, <tf.Variable 'fc2/bias:0' shape=(4096,) dtype=float32>, <tf.Variable 'predictions/kernel:0' shape=(4096, 1001) dtype=float32>, <tf.Variable 'predictions/bias:0' shape=(1001,) dtype=float32>]
+I1218 15:26:04.512609 140420909930240 arion.py:72] Raw strategy: id: "20191218T202604M508975"
+path: "/tmp/arion/strategies/20191218T202604M508975"
+node_config {
+  var_name: "block1_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+graph_config {
+  replicas: "localhost:GPU:0"
+  replicas: "localhost:GPU:1"
+}
+
+I1218 15:26:04.514063 140420909930240 arion.py:76] Compiled strategy: id: "20191218T202604M508975"
+path: "/tmp/arion/strategies/20191218T202604M508975"
+node_config {
+  var_name: "block1_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+graph_config {
+  replicas: "/job:worker/task:0/device:GPU:0"
+  replicas: "/job:worker/task:0/device:GPU:1"
+}
+
+I1218 15:26:04.605610 140420909930240 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/original
+I1218 15:26:04.607576 140420909930240 partitioner.py:74] Partitioning variable block1_conv1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.607707 140420909930240 partitioner.py:74] Partitioning variable block1_conv1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.607805 140420909930240 partitioner.py:74] Partitioning variable block1_conv2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.607896 140420909930240 partitioner.py:74] Partitioning variable block1_conv2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.607985 140420909930240 partitioner.py:74] Partitioning variable block2_conv1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.608072 140420909930240 partitioner.py:74] Partitioning variable block2_conv1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.608158 140420909930240 partitioner.py:74] Partitioning variable block2_conv2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.608243 140420909930240 partitioner.py:74] Partitioning variable block2_conv2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.608328 140420909930240 partitioner.py:74] Partitioning variable block3_conv1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.608413 140420909930240 partitioner.py:74] Partitioning variable block3_conv1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.608500 140420909930240 partitioner.py:74] Partitioning variable block3_conv2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.608585 140420909930240 partitioner.py:74] Partitioning variable block3_conv2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.609568 140420909930240 partitioner.py:74] Partitioning variable block3_conv3/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.609688 140420909930240 partitioner.py:74] Partitioning variable block3_conv3/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.609777 140420909930240 partitioner.py:74] Partitioning variable block4_conv1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.609862 140420909930240 partitioner.py:74] Partitioning variable block4_conv1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.609943 140420909930240 partitioner.py:74] Partitioning variable block4_conv2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610029 140420909930240 partitioner.py:74] Partitioning variable block4_conv2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610108 140420909930240 partitioner.py:74] Partitioning variable block4_conv3/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610193 140420909930240 partitioner.py:74] Partitioning variable block4_conv3/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610273 140420909930240 partitioner.py:74] Partitioning variable block5_conv1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610352 140420909930240 partitioner.py:74] Partitioning variable block5_conv1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610433 140420909930240 partitioner.py:74] Partitioning variable block5_conv2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610513 140420909930240 partitioner.py:74] Partitioning variable block5_conv2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610598 140420909930240 partitioner.py:74] Partitioning variable block5_conv3/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610677 140420909930240 partitioner.py:74] Partitioning variable block5_conv3/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610754 140420909930240 partitioner.py:74] Partitioning variable fc1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610833 140420909930240 partitioner.py:74] Partitioning variable fc1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610910 140420909930240 partitioner.py:74] Partitioning variable fc2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.610986 140420909930240 partitioner.py:74] Partitioning variable fc2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.611063 140420909930240 partitioner.py:74] Partitioning variable predictions/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1218 15:26:04.611142 140420909930240 partitioner.py:74] Partitioning variable predictions/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']

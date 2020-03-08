@@ -1,0 +1,1666 @@
+W1211 16:11:19.360927 139898040981248 deprecation.py:323] From /storage/baoyu/arion/env/lib/python3.6/site-packages/tensorflow_core/python/ops/image_ops_impl.py:2547: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W1211 16:11:19.562052 139898040981248 deprecation.py:506] From /storage/baoyu/arion/env/lib/python3.6/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1637: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+I1211 16:11:19.727745 139898040981248 graph_item.py:53] Patched optimizer: Adam 
+with args: (<tensorflow.python.keras.optimizer_v2.adam.Adam object at 0x7f3c0c789fd0>,) 
+kwargs: {'learning_rate': 0.1, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-08}
+I1211 16:11:19.839317 139898040981248 graph_item.py:69] Registered grads: 
+ [<tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 3, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 64, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 64, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 256) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(256,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(256,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv3/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv3/BiasAdd_grad/BiasAddGrad:0' shape=(256,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 256, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv3/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv3/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv3/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv3/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc1/MatMul_grad/MatMul_1:0' shape=(25088, 4096) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc1/BiasAdd_grad/BiasAddGrad:0' shape=(4096,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc2/MatMul_grad/MatMul_1:0' shape=(4096, 4096) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc2/BiasAdd_grad/BiasAddGrad:0' shape=(4096,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/predictions/MatMul_grad/MatMul_1:0' shape=(4096, 1001) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/predictions/BiasAdd_grad/BiasAddGrad:0' shape=(1001,) dtype=float32>] with targets: 
+ [<tf.Variable 'block1_conv1/kernel:0' shape=(3, 3, 3, 64) dtype=float32>, <tf.Variable 'block1_conv1/bias:0' shape=(64,) dtype=float32>, <tf.Variable 'block1_conv2/kernel:0' shape=(3, 3, 64, 64) dtype=float32>, <tf.Variable 'block1_conv2/bias:0' shape=(64,) dtype=float32>, <tf.Variable 'block2_conv1/kernel:0' shape=(3, 3, 64, 128) dtype=float32>, <tf.Variable 'block2_conv1/bias:0' shape=(128,) dtype=float32>, <tf.Variable 'block2_conv2/kernel:0' shape=(3, 3, 128, 128) dtype=float32>, <tf.Variable 'block2_conv2/bias:0' shape=(128,) dtype=float32>, <tf.Variable 'block3_conv1/kernel:0' shape=(3, 3, 128, 256) dtype=float32>, <tf.Variable 'block3_conv1/bias:0' shape=(256,) dtype=float32>, <tf.Variable 'block3_conv2/kernel:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv2/bias:0' shape=(256,) dtype=float32>, <tf.Variable 'block3_conv3/kernel:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv3/bias:0' shape=(256,) dtype=float32>, <tf.Variable 'block4_conv1/kernel:0' shape=(3, 3, 256, 512) dtype=float32>, <tf.Variable 'block4_conv1/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block4_conv2/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv2/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block4_conv3/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv3/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block5_conv1/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv1/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block5_conv2/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv2/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block5_conv3/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv3/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'fc1/kernel:0' shape=(25088, 4096) dtype=float32>, <tf.Variable 'fc1/bias:0' shape=(4096,) dtype=float32>, <tf.Variable 'fc2/kernel:0' shape=(4096, 4096) dtype=float32>, <tf.Variable 'fc2/bias:0' shape=(4096,) dtype=float32>, <tf.Variable 'predictions/kernel:0' shape=(4096, 1001) dtype=float32>, <tf.Variable 'predictions/bias:0' shape=(1001,) dtype=float32>]
+I1211 16:11:20.072743 139898040981248 graph_transformer.py:25] Raw strategy: id: "20191211T211120M069756"
+path: "/tmp/arion/strategies/20191211T211120M069756"
+node_config {
+  var_name: "block1_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+graph_config {
+  replicas: "localhost:GPU:0"
+  replicas: "localhost:GPU:1"
+}
+
+I1211 16:11:20.073776 139898040981248 graph_transformer.py:29] Compiled strategy: id: "20191211T211120M069756"
+path: "/tmp/arion/strategies/20191211T211120M069756"
+node_config {
+  var_name: "block1_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+graph_config {
+  replicas: "/job:worker/task:0/device:GPU:0"
+  replicas: "/job:worker/task:0/device:GPU:1"
+}
+
+I1211 16:11:20.163985 139898040981248 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/original
+I1211 16:11:20.259136 139898040981248 replicator.py:29] Local replica devices: ['/job:worker/task:0/device:GPU:0', '/job:worker/task:0/device:GPU:1']
+I1211 16:11:20.825736 139898040981248 replicator.py:56] Successfully replicated operations
+I1211 16:11:21.326284 139898040981248 replicator.py:60] Successfully applied local in-graph replication
+I1211 16:11:21.513146 139898040981248 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/after-in-graph
+I1211 16:11:22.062403 139898040981248 replicator.py:65] Successfully applied between-graph replication
+I1211 16:11:22.062619 139898040981248 graph_transformer.py:67] Successfully built transformed graph
+I1211 16:11:22.243685 139898040981248 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/transformed
+I1211 16:11:31.923670 139898040981248 resnet_imagenet_main_arion.py:317] batch steps: 78.000000
+W1211 16:11:31.924562 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:31.925080 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:38.719433 139898040981248 resnet_imagenet_main_arion.py:69] global step:1, loss value: 6.935802
+W1211 16:11:38.719794 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:38.720223 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:40.427272 139898040981248 resnet_imagenet_main_arion.py:69] global step:2, loss value: 25177431490864275241708814336.000000
+W1211 16:11:40.427499 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:40.427683 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:41.076265 139898040981248 resnet_imagenet_main_arion.py:69] global step:3, loss value: nan
+W1211 16:11:41.076473 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:41.076661 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:41.719493 139898040981248 resnet_imagenet_main_arion.py:69] global step:4, loss value: nan
+W1211 16:11:41.719703 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:41.719871 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:42.361303 139898040981248 resnet_imagenet_main_arion.py:69] global step:5, loss value: nan
+W1211 16:11:42.361526 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:42.361741 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:43.005187 139898040981248 resnet_imagenet_main_arion.py:69] global step:6, loss value: nan
+W1211 16:11:43.005395 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:43.005609 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:43.638221 139898040981248 resnet_imagenet_main_arion.py:69] global step:7, loss value: nan
+W1211 16:11:43.638439 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:43.638619 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:44.269938 139898040981248 resnet_imagenet_main_arion.py:69] global step:8, loss value: nan
+W1211 16:11:44.270164 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:44.270346 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:44.923938 139898040981248 resnet_imagenet_main_arion.py:69] global step:9, loss value: nan
+W1211 16:11:44.924148 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:44.924323 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:45.563559 139898040981248 resnet_imagenet_main_arion.py:69] global step:10, loss value: nan
+W1211 16:11:45.563769 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:45.563951 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:46.200853 139898040981248 resnet_imagenet_main_arion.py:69] global step:11, loss value: nan
+W1211 16:11:46.201064 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:46.201230 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:46.837322 139898040981248 resnet_imagenet_main_arion.py:69] global step:12, loss value: nan
+W1211 16:11:46.837532 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:46.837733 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:47.468818 139898040981248 resnet_imagenet_main_arion.py:69] global step:13, loss value: nan
+W1211 16:11:47.469024 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:47.469203 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:48.121150 139898040981248 resnet_imagenet_main_arion.py:69] global step:14, loss value: nan
+W1211 16:11:48.121364 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:48.121533 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:48.781878 139898040981248 resnet_imagenet_main_arion.py:69] global step:15, loss value: nan
+W1211 16:11:48.782092 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:48.782271 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:49.423664 139898040981248 resnet_imagenet_main_arion.py:69] global step:16, loss value: nan
+W1211 16:11:49.423882 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:49.424289 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:50.067452 139898040981248 resnet_imagenet_main_arion.py:69] global step:17, loss value: nan
+W1211 16:11:50.067663 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:50.067830 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:50.705305 139898040981248 resnet_imagenet_main_arion.py:69] global step:18, loss value: nan
+W1211 16:11:50.705516 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:50.705714 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:51.340199 139898040981248 resnet_imagenet_main_arion.py:69] global step:19, loss value: nan
+W1211 16:11:51.340424 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:51.340602 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:51.992134 139898040981248 resnet_imagenet_main_arion.py:69] global step:20, loss value: nan
+W1211 16:11:51.992344 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:51.992538 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:52.627805 139898040981248 resnet_imagenet_main_arion.py:69] global step:21, loss value: nan
+W1211 16:11:52.628014 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:52.628204 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:53.285254 139898040981248 resnet_imagenet_main_arion.py:69] global step:22, loss value: nan
+W1211 16:11:53.285475 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:53.285715 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:53.942465 139898040981248 resnet_imagenet_main_arion.py:69] global step:23, loss value: nan
+W1211 16:11:53.942695 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:53.942884 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:54.594677 139898040981248 resnet_imagenet_main_arion.py:69] global step:24, loss value: nan
+W1211 16:11:54.594906 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:54.595275 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:55.235517 139898040981248 resnet_imagenet_main_arion.py:69] global step:25, loss value: nan
+W1211 16:11:55.235739 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:55.235924 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:55.877741 139898040981248 resnet_imagenet_main_arion.py:69] global step:26, loss value: nan
+W1211 16:11:55.877964 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:55.878149 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:56.515249 139898040981248 resnet_imagenet_main_arion.py:69] global step:27, loss value: nan
+W1211 16:11:56.515461 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:56.515630 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:57.160706 139898040981248 resnet_imagenet_main_arion.py:69] global step:28, loss value: nan
+W1211 16:11:57.160916 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:57.161086 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:57.806857 139898040981248 resnet_imagenet_main_arion.py:69] global step:29, loss value: nan
+W1211 16:11:57.807065 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:57.807233 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:58.444922 139898040981248 resnet_imagenet_main_arion.py:69] global step:30, loss value: nan
+W1211 16:11:58.445140 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:58.445334 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:59.079063 139898040981248 resnet_imagenet_main_arion.py:69] global step:31, loss value: nan
+W1211 16:11:59.079286 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:59.079470 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:11:59.723487 139898040981248 resnet_imagenet_main_arion.py:69] global step:32, loss value: nan
+W1211 16:11:59.723702 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:11:59.724061 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:00.363233 139898040981248 resnet_imagenet_main_arion.py:69] global step:33, loss value: nan
+W1211 16:12:00.363444 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:00.363650 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:01.006663 139898040981248 resnet_imagenet_main_arion.py:69] global step:34, loss value: nan
+W1211 16:12:01.006884 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:01.007090 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:01.651053 139898040981248 resnet_imagenet_main_arion.py:69] global step:35, loss value: nan
+W1211 16:12:01.651278 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:01.651455 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:02.287964 139898040981248 resnet_imagenet_main_arion.py:69] global step:36, loss value: nan
+W1211 16:12:02.288180 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:02.288373 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:02.928898 139898040981248 resnet_imagenet_main_arion.py:69] global step:37, loss value: nan
+W1211 16:12:02.929113 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:02.929283 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:03.559915 139898040981248 resnet_imagenet_main_arion.py:69] global step:38, loss value: nan
+W1211 16:12:03.560137 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:03.560303 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:04.208642 139898040981248 resnet_imagenet_main_arion.py:69] global step:39, loss value: nan
+W1211 16:12:04.208866 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:04.209037 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:04.843436 139898040981248 resnet_imagenet_main_arion.py:69] global step:40, loss value: nan
+W1211 16:12:04.843680 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:04.844248 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:05.485102 139898040981248 resnet_imagenet_main_arion.py:69] global step:41, loss value: nan
+W1211 16:12:05.485324 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:05.485501 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:06.135669 139898040981248 resnet_imagenet_main_arion.py:69] global step:42, loss value: nan
+W1211 16:12:06.135880 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:06.136049 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:06.793255 139898040981248 resnet_imagenet_main_arion.py:69] global step:43, loss value: nan
+W1211 16:12:06.793456 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:06.793674 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:07.431833 139898040981248 resnet_imagenet_main_arion.py:69] global step:44, loss value: nan
+W1211 16:12:07.432043 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:07.432220 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:08.068652 139898040981248 resnet_imagenet_main_arion.py:69] global step:45, loss value: nan
+W1211 16:12:08.068869 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:08.069035 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:08.711369 139898040981248 resnet_imagenet_main_arion.py:69] global step:46, loss value: nan
+W1211 16:12:08.711579 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:08.711749 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:09.355414 139898040981248 resnet_imagenet_main_arion.py:69] global step:47, loss value: nan
+W1211 16:12:09.355618 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:09.355781 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:10.005006 139898040981248 resnet_imagenet_main_arion.py:69] global step:48, loss value: nan
+W1211 16:12:10.005228 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:10.005630 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:10.634307 139898040981248 resnet_imagenet_main_arion.py:69] global step:49, loss value: nan
+W1211 16:12:10.634520 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:10.634691 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:11.278360 139898040981248 resnet_imagenet_main_arion.py:69] global step:50, loss value: nan
+W1211 16:12:11.278569 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:11.278738 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:11.916108 139898040981248 resnet_imagenet_main_arion.py:69] global step:51, loss value: nan
+W1211 16:12:11.916334 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:11.916516 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:12.554457 139898040981248 resnet_imagenet_main_arion.py:69] global step:52, loss value: nan
+W1211 16:12:12.554666 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:12.554844 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:13.196894 139898040981248 resnet_imagenet_main_arion.py:69] global step:53, loss value: nan
+W1211 16:12:13.197114 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:13.197276 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:13.838959 139898040981248 resnet_imagenet_main_arion.py:69] global step:54, loss value: nan
+W1211 16:12:13.839174 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:13.839355 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:14.489073 139898040981248 resnet_imagenet_main_arion.py:69] global step:55, loss value: nan
+W1211 16:12:14.489295 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:14.489466 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:15.120919 139898040981248 resnet_imagenet_main_arion.py:69] global step:56, loss value: nan
+W1211 16:12:15.121137 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:15.121535 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:15.769917 139898040981248 resnet_imagenet_main_arion.py:69] global step:57, loss value: nan
+W1211 16:12:15.770122 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:15.770299 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:16.420831 139898040981248 resnet_imagenet_main_arion.py:69] global step:58, loss value: nan
+W1211 16:12:16.421047 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:16.421228 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:17.058292 139898040981248 resnet_imagenet_main_arion.py:69] global step:59, loss value: nan
+W1211 16:12:17.058516 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:17.058696 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:17.703789 139898040981248 resnet_imagenet_main_arion.py:69] global step:60, loss value: nan
+W1211 16:12:17.704007 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:17.704200 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:18.344384 139898040981248 resnet_imagenet_main_arion.py:69] global step:61, loss value: nan
+W1211 16:12:18.344599 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:18.344767 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:18.998311 139898040981248 resnet_imagenet_main_arion.py:69] global step:62, loss value: nan
+W1211 16:12:18.998551 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:18.998731 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:19.646252 139898040981248 resnet_imagenet_main_arion.py:69] global step:63, loss value: nan
+W1211 16:12:19.646458 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:19.646640 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:20.293809 139898040981248 resnet_imagenet_main_arion.py:69] global step:64, loss value: nan
+W1211 16:12:20.294038 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:20.294424 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:20.963448 139898040981248 resnet_imagenet_main_arion.py:69] global step:65, loss value: nan
+W1211 16:12:20.963658 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:20.963849 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:21.609793 139898040981248 resnet_imagenet_main_arion.py:69] global step:66, loss value: nan
+W1211 16:12:21.610002 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:21.610179 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:22.248198 139898040981248 resnet_imagenet_main_arion.py:69] global step:67, loss value: nan
+W1211 16:12:22.248410 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:22.248579 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:22.893012 139898040981248 resnet_imagenet_main_arion.py:69] global step:68, loss value: nan
+W1211 16:12:22.893224 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:22.893393 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:23.536727 139898040981248 resnet_imagenet_main_arion.py:69] global step:69, loss value: nan
+W1211 16:12:23.536947 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:23.537128 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:24.187847 139898040981248 resnet_imagenet_main_arion.py:69] global step:70, loss value: nan
+W1211 16:12:24.188068 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:24.188240 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:24.855428 139898040981248 resnet_imagenet_main_arion.py:69] global step:71, loss value: nan
+W1211 16:12:24.855635 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:24.855829 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:25.498655 139898040981248 resnet_imagenet_main_arion.py:69] global step:72, loss value: nan
+W1211 16:12:25.498867 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:25.499329 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:26.146191 139898040981248 resnet_imagenet_main_arion.py:69] global step:73, loss value: nan
+W1211 16:12:26.146399 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:26.146564 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:26.801944 139898040981248 resnet_imagenet_main_arion.py:69] global step:74, loss value: nan
+W1211 16:12:26.802155 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:26.802324 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:27.452054 139898040981248 resnet_imagenet_main_arion.py:69] global step:75, loss value: nan
+W1211 16:12:27.452268 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:27.452444 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:28.097520 139898040981248 resnet_imagenet_main_arion.py:69] global step:76, loss value: nan
+W1211 16:12:28.097771 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:28.097940 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:28.753151 139898040981248 resnet_imagenet_main_arion.py:69] global step:77, loss value: nan
+W1211 16:12:28.753362 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:28.753532 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:29.394335 139898040981248 resnet_imagenet_main_arion.py:69] global step:78, loss value: nan
+I1211 16:12:29.394483 139898040981248 resnet_imagenet_main_arion.py:77] global step:78, time_taken: 57.470215,examples_per_second: 43.431193
+I1211 16:12:29.394541 139898040981248 resnet_imagenet_main_arion.py:85] epoch':0, 'time_taken': 57.470289
+W1211 16:12:29.394661 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:29.394839 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:30.031402 139898040981248 resnet_imagenet_main_arion.py:69] global step:79, loss value: nan
+W1211 16:12:30.031613 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:30.031782 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:30.665695 139898040981248 resnet_imagenet_main_arion.py:69] global step:80, loss value: nan
+W1211 16:12:30.665930 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:30.666128 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:31.299163 139898040981248 resnet_imagenet_main_arion.py:69] global step:81, loss value: nan
+W1211 16:12:31.299381 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:31.299551 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:31.946192 139898040981248 resnet_imagenet_main_arion.py:69] global step:82, loss value: nan
+W1211 16:12:31.946403 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:31.946577 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:32.587971 139898040981248 resnet_imagenet_main_arion.py:69] global step:83, loss value: nan
+W1211 16:12:32.588179 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:32.588348 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:33.238750 139898040981248 resnet_imagenet_main_arion.py:69] global step:84, loss value: nan
+W1211 16:12:33.238959 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:33.239135 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:33.891383 139898040981248 resnet_imagenet_main_arion.py:69] global step:85, loss value: nan
+W1211 16:12:33.891596 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:33.891777 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:34.525641 139898040981248 resnet_imagenet_main_arion.py:69] global step:86, loss value: nan
+W1211 16:12:34.525852 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:34.526018 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:35.171971 139898040981248 resnet_imagenet_main_arion.py:69] global step:87, loss value: nan
+W1211 16:12:35.172187 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:35.172359 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:35.806259 139898040981248 resnet_imagenet_main_arion.py:69] global step:88, loss value: nan
+W1211 16:12:35.806474 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:35.806821 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:36.450110 139898040981248 resnet_imagenet_main_arion.py:69] global step:89, loss value: nan
+W1211 16:12:36.450316 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:36.450511 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:37.100093 139898040981248 resnet_imagenet_main_arion.py:69] global step:90, loss value: nan
+W1211 16:12:37.100307 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:37.100497 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:37.748346 139898040981248 resnet_imagenet_main_arion.py:69] global step:91, loss value: nan
+W1211 16:12:37.748562 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:37.748756 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:38.393278 139898040981248 resnet_imagenet_main_arion.py:69] global step:92, loss value: nan
+W1211 16:12:38.393497 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:38.393717 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:39.033071 139898040981248 resnet_imagenet_main_arion.py:69] global step:93, loss value: nan
+W1211 16:12:39.033282 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:39.033476 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:39.677880 139898040981248 resnet_imagenet_main_arion.py:69] global step:94, loss value: nan
+W1211 16:12:39.678102 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:39.678288 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:40.320921 139898040981248 resnet_imagenet_main_arion.py:69] global step:95, loss value: nan
+W1211 16:12:40.321134 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:40.321328 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:40.986556 139898040981248 resnet_imagenet_main_arion.py:69] global step:96, loss value: nan
+W1211 16:12:40.986771 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:40.987157 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:41.634421 139898040981248 resnet_imagenet_main_arion.py:69] global step:97, loss value: nan
+W1211 16:12:41.634631 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:41.634834 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:42.270660 139898040981248 resnet_imagenet_main_arion.py:69] global step:98, loss value: nan
+W1211 16:12:42.270880 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:42.271079 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:42.907375 139898040981248 resnet_imagenet_main_arion.py:69] global step:99, loss value: nan
+W1211 16:12:42.907586 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:42.907777 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:43.572505 139898040981248 resnet_imagenet_main_arion.py:69] global step:100, loss value: nan
+W1211 16:12:43.572720 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:43.572902 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:44.216841 139898040981248 resnet_imagenet_main_arion.py:69] global step:101, loss value: nan
+W1211 16:12:44.217052 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:44.217219 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:44.851524 139898040981248 resnet_imagenet_main_arion.py:69] global step:102, loss value: nan
+W1211 16:12:44.851739 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:44.851907 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:45.484608 139898040981248 resnet_imagenet_main_arion.py:69] global step:103, loss value: nan
+W1211 16:12:45.484818 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:45.485000 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:46.124432 139898040981248 resnet_imagenet_main_arion.py:69] global step:104, loss value: nan
+W1211 16:12:46.124650 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:46.125222 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:46.765166 139898040981248 resnet_imagenet_main_arion.py:69] global step:105, loss value: nan
+W1211 16:12:46.765376 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:46.765542 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:47.414345 139898040981248 resnet_imagenet_main_arion.py:69] global step:106, loss value: nan
+W1211 16:12:47.414561 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:47.414731 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:48.074995 139898040981248 resnet_imagenet_main_arion.py:69] global step:107, loss value: nan
+W1211 16:12:48.075213 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:48.075381 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:48.738773 139898040981248 resnet_imagenet_main_arion.py:69] global step:108, loss value: nan
+W1211 16:12:48.738988 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:48.739183 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:49.388919 139898040981248 resnet_imagenet_main_arion.py:69] global step:109, loss value: nan
+W1211 16:12:49.389145 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:49.389315 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:50.047805 139898040981248 resnet_imagenet_main_arion.py:69] global step:110, loss value: nan
+W1211 16:12:50.048020 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:50.048195 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:50.688952 139898040981248 resnet_imagenet_main_arion.py:69] global step:111, loss value: nan
+W1211 16:12:50.689166 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:50.689335 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:51.338956 139898040981248 resnet_imagenet_main_arion.py:69] global step:112, loss value: nan
+W1211 16:12:51.339173 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:51.339341 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:51.982778 139898040981248 resnet_imagenet_main_arion.py:69] global step:113, loss value: nan
+W1211 16:12:51.982993 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:51.983159 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:52.634489 139898040981248 resnet_imagenet_main_arion.py:69] global step:114, loss value: nan
+W1211 16:12:52.634698 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:52.634875 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:53.303744 139898040981248 resnet_imagenet_main_arion.py:69] global step:115, loss value: nan
+W1211 16:12:53.303956 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:53.304134 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:53.959576 139898040981248 resnet_imagenet_main_arion.py:69] global step:116, loss value: nan
+W1211 16:12:53.959792 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:53.959960 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:54.623108 139898040981248 resnet_imagenet_main_arion.py:69] global step:117, loss value: nan
+W1211 16:12:54.623345 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:54.623524 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:55.258294 139898040981248 resnet_imagenet_main_arion.py:69] global step:118, loss value: nan
+W1211 16:12:55.258509 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:55.258687 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:55.898163 139898040981248 resnet_imagenet_main_arion.py:69] global step:119, loss value: nan
+W1211 16:12:55.898378 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:55.898570 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:56.542037 139898040981248 resnet_imagenet_main_arion.py:69] global step:120, loss value: nan
+W1211 16:12:56.542253 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:56.542647 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:57.196667 139898040981248 resnet_imagenet_main_arion.py:69] global step:121, loss value: nan
+W1211 16:12:57.196878 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:57.197053 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:57.842966 139898040981248 resnet_imagenet_main_arion.py:69] global step:122, loss value: nan
+W1211 16:12:57.843182 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:57.843364 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:58.481482 139898040981248 resnet_imagenet_main_arion.py:69] global step:123, loss value: nan
+W1211 16:12:58.481728 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:58.481893 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:59.132643 139898040981248 resnet_imagenet_main_arion.py:69] global step:124, loss value: nan
+W1211 16:12:59.132855 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:59.133022 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:12:59.783566 139898040981248 resnet_imagenet_main_arion.py:69] global step:125, loss value: nan
+W1211 16:12:59.783779 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:12:59.783978 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:00.433030 139898040981248 resnet_imagenet_main_arion.py:69] global step:126, loss value: nan
+W1211 16:13:00.433239 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:00.433433 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:01.067720 139898040981248 resnet_imagenet_main_arion.py:69] global step:127, loss value: nan
+W1211 16:13:01.067936 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:01.068106 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:01.711425 139898040981248 resnet_imagenet_main_arion.py:69] global step:128, loss value: nan
+W1211 16:13:01.711660 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:01.712043 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:02.356977 139898040981248 resnet_imagenet_main_arion.py:69] global step:129, loss value: nan
+W1211 16:13:02.357200 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:02.357376 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:03.008896 139898040981248 resnet_imagenet_main_arion.py:69] global step:130, loss value: nan
+W1211 16:13:03.009105 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:03.009279 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:03.653621 139898040981248 resnet_imagenet_main_arion.py:69] global step:131, loss value: nan
+W1211 16:13:03.653835 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:03.654033 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:04.299879 139898040981248 resnet_imagenet_main_arion.py:69] global step:132, loss value: nan
+W1211 16:13:04.300093 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:04.300263 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:04.951338 139898040981248 resnet_imagenet_main_arion.py:69] global step:133, loss value: nan
+W1211 16:13:04.951548 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:04.951739 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:05.591312 139898040981248 resnet_imagenet_main_arion.py:69] global step:134, loss value: nan
+W1211 16:13:05.591529 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:05.591697 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:06.226284 139898040981248 resnet_imagenet_main_arion.py:69] global step:135, loss value: nan
+W1211 16:13:06.226496 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:06.226665 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:06.875897 139898040981248 resnet_imagenet_main_arion.py:69] global step:136, loss value: nan
+W1211 16:13:06.876113 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:06.876502 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:07.519540 139898040981248 resnet_imagenet_main_arion.py:69] global step:137, loss value: nan
+W1211 16:13:07.519749 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:07.519917 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:08.164454 139898040981248 resnet_imagenet_main_arion.py:69] global step:138, loss value: nan
+W1211 16:13:08.164666 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:08.164834 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:08.815429 139898040981248 resnet_imagenet_main_arion.py:69] global step:139, loss value: nan
+W1211 16:13:08.815638 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:08.815804 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:09.467259 139898040981248 resnet_imagenet_main_arion.py:69] global step:140, loss value: nan
+W1211 16:13:09.467462 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:09.467639 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:10.111917 139898040981248 resnet_imagenet_main_arion.py:69] global step:141, loss value: nan
+W1211 16:13:10.112126 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:10.112292 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:10.757381 139898040981248 resnet_imagenet_main_arion.py:69] global step:142, loss value: nan
+W1211 16:13:10.757616 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:10.757792 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:11.406006 139898040981248 resnet_imagenet_main_arion.py:69] global step:143, loss value: nan
+W1211 16:13:11.406216 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:11.406388 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:12.053206 139898040981248 resnet_imagenet_main_arion.py:69] global step:144, loss value: nan
+W1211 16:13:12.053426 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:12.053734 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:12.706271 139898040981248 resnet_imagenet_main_arion.py:69] global step:145, loss value: nan
+W1211 16:13:12.706494 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:12.706660 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:13.357533 139898040981248 resnet_imagenet_main_arion.py:69] global step:146, loss value: nan
+W1211 16:13:13.357769 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:13.357945 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:13.994011 139898040981248 resnet_imagenet_main_arion.py:69] global step:147, loss value: nan
+W1211 16:13:13.994221 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:13.994400 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:14.630080 139898040981248 resnet_imagenet_main_arion.py:69] global step:148, loss value: nan
+W1211 16:13:14.630298 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:14.630474 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:15.290072 139898040981248 resnet_imagenet_main_arion.py:69] global step:149, loss value: nan
+W1211 16:13:15.290282 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:15.290448 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:15.937223 139898040981248 resnet_imagenet_main_arion.py:69] global step:150, loss value: nan
+W1211 16:13:15.937434 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:15.937629 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:16.570924 139898040981248 resnet_imagenet_main_arion.py:69] global step:151, loss value: nan
+W1211 16:13:16.571134 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:16.571302 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:17.214223 139898040981248 resnet_imagenet_main_arion.py:69] global step:152, loss value: nan
+W1211 16:13:17.214445 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:17.214816 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:17.878382 139898040981248 resnet_imagenet_main_arion.py:69] global step:153, loss value: nan
+W1211 16:13:17.878600 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:17.878775 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:18.524399 139898040981248 resnet_imagenet_main_arion.py:69] global step:154, loss value: nan
+W1211 16:13:18.524609 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:18.524814 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:19.172801 139898040981248 resnet_imagenet_main_arion.py:69] global step:155, loss value: nan
+W1211 16:13:19.173020 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:19.173195 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:19.833662 139898040981248 resnet_imagenet_main_arion.py:69] global step:156, loss value: nan
+I1211 16:13:19.833806 139898040981248 resnet_imagenet_main_arion.py:77] global step:156, time_taken: 50.439328,examples_per_second: 49.485195
+I1211 16:13:19.833891 139898040981248 resnet_imagenet_main_arion.py:85] epoch':1, 'time_taken': 50.439300
+W1211 16:13:19.834009 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:19.834181 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:20.475020 139898040981248 resnet_imagenet_main_arion.py:69] global step:157, loss value: nan
+W1211 16:13:20.475221 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:20.475396 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:21.126966 139898040981248 resnet_imagenet_main_arion.py:69] global step:158, loss value: nan
+W1211 16:13:21.127181 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:21.127355 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:21.772858 139898040981248 resnet_imagenet_main_arion.py:69] global step:159, loss value: nan
+W1211 16:13:21.773068 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:21.773269 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:22.415293 139898040981248 resnet_imagenet_main_arion.py:69] global step:160, loss value: nan
+W1211 16:13:22.415516 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:22.415887 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:23.054924 139898040981248 resnet_imagenet_main_arion.py:69] global step:161, loss value: nan
+W1211 16:13:23.055135 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:23.055302 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:23.695533 139898040981248 resnet_imagenet_main_arion.py:69] global step:162, loss value: nan
+W1211 16:13:23.695758 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:23.695942 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:24.347119 139898040981248 resnet_imagenet_main_arion.py:69] global step:163, loss value: nan
+W1211 16:13:24.347340 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:24.347510 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:24.988938 139898040981248 resnet_imagenet_main_arion.py:69] global step:164, loss value: nan
+W1211 16:13:24.989149 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:24.989318 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:25.633297 139898040981248 resnet_imagenet_main_arion.py:69] global step:165, loss value: nan
+W1211 16:13:25.633512 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:25.633700 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:26.280415 139898040981248 resnet_imagenet_main_arion.py:69] global step:166, loss value: nan
+W1211 16:13:26.280628 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:26.280801 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:26.935961 139898040981248 resnet_imagenet_main_arion.py:69] global step:167, loss value: nan
+W1211 16:13:26.936177 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:26.936345 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:27.580745 139898040981248 resnet_imagenet_main_arion.py:69] global step:168, loss value: nan
+W1211 16:13:27.580962 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:27.581351 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:28.221343 139898040981248 resnet_imagenet_main_arion.py:69] global step:169, loss value: nan
+W1211 16:13:28.221573 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:28.221741 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:28.859421 139898040981248 resnet_imagenet_main_arion.py:69] global step:170, loss value: nan
+W1211 16:13:28.859631 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:28.859803 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:29.514687 139898040981248 resnet_imagenet_main_arion.py:69] global step:171, loss value: nan
+W1211 16:13:29.514911 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:29.515089 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:30.160494 139898040981248 resnet_imagenet_main_arion.py:69] global step:172, loss value: nan
+W1211 16:13:30.160705 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:30.160892 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:30.806720 139898040981248 resnet_imagenet_main_arion.py:69] global step:173, loss value: nan
+W1211 16:13:30.806930 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:30.807108 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:31.450829 139898040981248 resnet_imagenet_main_arion.py:69] global step:174, loss value: nan
+W1211 16:13:31.451064 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:31.451246 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:32.110617 139898040981248 resnet_imagenet_main_arion.py:69] global step:175, loss value: nan
+W1211 16:13:32.110827 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:32.110996 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:32.756784 139898040981248 resnet_imagenet_main_arion.py:69] global step:176, loss value: nan
+W1211 16:13:32.757022 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:32.757385 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:33.412044 139898040981248 resnet_imagenet_main_arion.py:69] global step:177, loss value: nan
+W1211 16:13:33.412257 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:33.412423 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:34.051966 139898040981248 resnet_imagenet_main_arion.py:69] global step:178, loss value: nan
+W1211 16:13:34.052178 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:34.052346 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:34.694916 139898040981248 resnet_imagenet_main_arion.py:69] global step:179, loss value: nan
+W1211 16:13:34.695132 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:34.695299 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:35.359449 139898040981248 resnet_imagenet_main_arion.py:69] global step:180, loss value: nan
+W1211 16:13:35.359662 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:35.359839 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:36.019017 139898040981248 resnet_imagenet_main_arion.py:69] global step:181, loss value: nan
+W1211 16:13:36.019225 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:36.019403 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:36.663137 139898040981248 resnet_imagenet_main_arion.py:69] global step:182, loss value: nan
+W1211 16:13:36.663359 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:36.663541 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:37.320483 139898040981248 resnet_imagenet_main_arion.py:69] global step:183, loss value: nan
+W1211 16:13:37.320692 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:37.320860 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:37.965291 139898040981248 resnet_imagenet_main_arion.py:69] global step:184, loss value: nan
+W1211 16:13:37.965509 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:37.965901 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:38.613836 139898040981248 resnet_imagenet_main_arion.py:69] global step:185, loss value: nan
+W1211 16:13:38.614052 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:38.614222 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:39.268969 139898040981248 resnet_imagenet_main_arion.py:69] global step:186, loss value: nan
+W1211 16:13:39.269181 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:39.269349 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:39.925118 139898040981248 resnet_imagenet_main_arion.py:69] global step:187, loss value: nan
+W1211 16:13:39.925329 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:39.925496 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:40.572513 139898040981248 resnet_imagenet_main_arion.py:69] global step:188, loss value: nan
+W1211 16:13:40.572726 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:40.572920 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:41.216542 139898040981248 resnet_imagenet_main_arion.py:69] global step:189, loss value: nan
+W1211 16:13:41.216759 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:41.216942 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:41.866305 139898040981248 resnet_imagenet_main_arion.py:69] global step:190, loss value: nan
+W1211 16:13:41.866513 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:41.866680 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:42.516091 139898040981248 resnet_imagenet_main_arion.py:69] global step:191, loss value: nan
+W1211 16:13:42.516302 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:42.516471 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:43.179679 139898040981248 resnet_imagenet_main_arion.py:69] global step:192, loss value: nan
+W1211 16:13:43.179918 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:43.180290 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:43.832094 139898040981248 resnet_imagenet_main_arion.py:69] global step:193, loss value: nan
+W1211 16:13:43.832301 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:43.832467 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:44.479704 139898040981248 resnet_imagenet_main_arion.py:69] global step:194, loss value: nan
+W1211 16:13:44.479915 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:44.480088 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:45.140344 139898040981248 resnet_imagenet_main_arion.py:69] global step:195, loss value: nan
+W1211 16:13:45.140556 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:45.140735 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:45.782915 139898040981248 resnet_imagenet_main_arion.py:69] global step:196, loss value: nan
+W1211 16:13:45.783141 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:45.783327 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:46.435615 139898040981248 resnet_imagenet_main_arion.py:69] global step:197, loss value: nan
+W1211 16:13:46.435826 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:46.435998 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:47.085001 139898040981248 resnet_imagenet_main_arion.py:69] global step:198, loss value: nan
+W1211 16:13:47.085211 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:47.085377 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:47.736747 139898040981248 resnet_imagenet_main_arion.py:69] global step:199, loss value: nan
+W1211 16:13:47.736954 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:47.737133 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:48.372724 139898040981248 resnet_imagenet_main_arion.py:69] global step:200, loss value: nan
+W1211 16:13:48.372952 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:48.373329 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:49.035339 139898040981248 resnet_imagenet_main_arion.py:69] global step:201, loss value: nan
+W1211 16:13:49.035559 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:49.035730 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:49.682977 139898040981248 resnet_imagenet_main_arion.py:69] global step:202, loss value: nan
+W1211 16:13:49.683193 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:49.683360 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:50.326444 139898040981248 resnet_imagenet_main_arion.py:69] global step:203, loss value: nan
+W1211 16:13:50.326651 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:50.326836 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:50.971944 139898040981248 resnet_imagenet_main_arion.py:69] global step:204, loss value: nan
+W1211 16:13:50.972153 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:50.972316 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:51.633143 139898040981248 resnet_imagenet_main_arion.py:69] global step:205, loss value: nan
+W1211 16:13:51.633354 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:51.633584 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:52.273873 139898040981248 resnet_imagenet_main_arion.py:69] global step:206, loss value: nan
+W1211 16:13:52.274085 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:52.274275 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:52.922649 139898040981248 resnet_imagenet_main_arion.py:69] global step:207, loss value: nan
+W1211 16:13:52.922869 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:52.923046 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:53.576309 139898040981248 resnet_imagenet_main_arion.py:69] global step:208, loss value: nan
+W1211 16:13:53.576526 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:53.576833 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:54.223224 139898040981248 resnet_imagenet_main_arion.py:69] global step:209, loss value: nan
+W1211 16:13:54.223439 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:54.223619 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:54.879729 139898040981248 resnet_imagenet_main_arion.py:69] global step:210, loss value: nan
+W1211 16:13:54.879944 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:54.880112 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:55.543791 139898040981248 resnet_imagenet_main_arion.py:69] global step:211, loss value: nan
+W1211 16:13:55.544012 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:55.544189 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:56.203659 139898040981248 resnet_imagenet_main_arion.py:69] global step:212, loss value: nan
+W1211 16:13:56.203860 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:56.204038 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:56.860609 139898040981248 resnet_imagenet_main_arion.py:69] global step:213, loss value: nan
+W1211 16:13:56.860820 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:56.860987 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:57.514069 139898040981248 resnet_imagenet_main_arion.py:69] global step:214, loss value: nan
+W1211 16:13:57.514292 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:57.514473 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:58.174043 139898040981248 resnet_imagenet_main_arion.py:69] global step:215, loss value: nan
+W1211 16:13:58.174255 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:58.174424 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:58.824449 139898040981248 resnet_imagenet_main_arion.py:69] global step:216, loss value: nan
+W1211 16:13:58.824657 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:58.825074 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:13:59.474296 139898040981248 resnet_imagenet_main_arion.py:69] global step:217, loss value: nan
+W1211 16:13:59.474516 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:13:59.474692 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:00.126578 139898040981248 resnet_imagenet_main_arion.py:69] global step:218, loss value: nan
+W1211 16:14:00.126780 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:00.126969 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:00.786601 139898040981248 resnet_imagenet_main_arion.py:69] global step:219, loss value: nan
+W1211 16:14:00.786805 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:00.786983 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:01.439924 139898040981248 resnet_imagenet_main_arion.py:69] global step:220, loss value: nan
+W1211 16:14:01.440137 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:01.440325 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:02.104638 139898040981248 resnet_imagenet_main_arion.py:69] global step:221, loss value: nan
+W1211 16:14:02.104856 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:02.105043 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:02.756233 139898040981248 resnet_imagenet_main_arion.py:69] global step:222, loss value: nan
+W1211 16:14:02.756450 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:02.756633 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:03.416047 139898040981248 resnet_imagenet_main_arion.py:69] global step:223, loss value: nan
+W1211 16:14:03.416262 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:03.416452 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:04.073475 139898040981248 resnet_imagenet_main_arion.py:69] global step:224, loss value: nan
+W1211 16:14:04.073746 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:04.074128 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:04.722050 139898040981248 resnet_imagenet_main_arion.py:69] global step:225, loss value: nan
+W1211 16:14:04.722264 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:04.722438 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:05.372240 139898040981248 resnet_imagenet_main_arion.py:69] global step:226, loss value: nan
+W1211 16:14:05.372465 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:05.372632 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:06.027311 139898040981248 resnet_imagenet_main_arion.py:69] global step:227, loss value: nan
+W1211 16:14:06.027521 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:06.027698 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:06.675406 139898040981248 resnet_imagenet_main_arion.py:69] global step:228, loss value: nan
+W1211 16:14:06.675614 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:06.675814 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:07.321911 139898040981248 resnet_imagenet_main_arion.py:69] global step:229, loss value: nan
+W1211 16:14:07.322120 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:07.322284 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:07.978917 139898040981248 resnet_imagenet_main_arion.py:69] global step:230, loss value: nan
+W1211 16:14:07.979146 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:07.979329 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:08.623974 139898040981248 resnet_imagenet_main_arion.py:69] global step:231, loss value: nan
+W1211 16:14:08.624183 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:08.624360 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:09.283260 139898040981248 resnet_imagenet_main_arion.py:69] global step:232, loss value: nan
+W1211 16:14:09.283485 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:09.283845 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:09.927467 139898040981248 resnet_imagenet_main_arion.py:69] global step:233, loss value: nan
+W1211 16:14:09.927679 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:09.927846 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:10.579099 139898040981248 resnet_imagenet_main_arion.py:69] global step:234, loss value: nan
+I1211 16:14:10.579242 139898040981248 resnet_imagenet_main_arion.py:77] global step:234, time_taken: 50.745436,examples_per_second: 49.186689
+I1211 16:14:10.579301 139898040981248 resnet_imagenet_main_arion.py:85] epoch':2, 'time_taken': 50.745362
+W1211 16:14:10.579423 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:10.579602 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:11.228686 139898040981248 resnet_imagenet_main_arion.py:69] global step:235, loss value: nan
+W1211 16:14:11.228903 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:11.229071 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:11.899634 139898040981248 resnet_imagenet_main_arion.py:69] global step:236, loss value: nan
+W1211 16:14:11.899855 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:11.900027 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:12.541896 139898040981248 resnet_imagenet_main_arion.py:69] global step:237, loss value: nan
+W1211 16:14:12.542105 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:12.542271 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:13.183305 139898040981248 resnet_imagenet_main_arion.py:69] global step:238, loss value: nan
+W1211 16:14:13.183519 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:13.183714 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:13.835649 139898040981248 resnet_imagenet_main_arion.py:69] global step:239, loss value: nan
+W1211 16:14:13.835877 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:13.836057 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:14.481497 139898040981248 resnet_imagenet_main_arion.py:69] global step:240, loss value: nan
+W1211 16:14:14.481748 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:14.482120 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:15.139000 139898040981248 resnet_imagenet_main_arion.py:69] global step:241, loss value: nan
+W1211 16:14:15.139211 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:15.139377 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:15.781960 139898040981248 resnet_imagenet_main_arion.py:69] global step:242, loss value: nan
+W1211 16:14:15.782169 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:15.782336 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:16.430390 139898040981248 resnet_imagenet_main_arion.py:69] global step:243, loss value: nan
+W1211 16:14:16.430599 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:16.430765 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:17.097501 139898040981248 resnet_imagenet_main_arion.py:69] global step:244, loss value: nan
+W1211 16:14:17.097744 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:17.097913 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:17.748391 139898040981248 resnet_imagenet_main_arion.py:69] global step:245, loss value: nan
+W1211 16:14:17.748603 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:17.748787 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:18.394495 139898040981248 resnet_imagenet_main_arion.py:69] global step:246, loss value: nan
+W1211 16:14:18.394715 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:18.394892 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:19.040126 139898040981248 resnet_imagenet_main_arion.py:69] global step:247, loss value: nan
+W1211 16:14:19.040352 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:19.040535 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:19.688611 139898040981248 resnet_imagenet_main_arion.py:69] global step:248, loss value: nan
+W1211 16:14:19.688828 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:19.689207 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:20.350443 139898040981248 resnet_imagenet_main_arion.py:69] global step:249, loss value: nan
+W1211 16:14:20.350645 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:20.350820 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:20.995875 139898040981248 resnet_imagenet_main_arion.py:69] global step:250, loss value: nan
+W1211 16:14:20.996084 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:20.996250 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:21.647140 139898040981248 resnet_imagenet_main_arion.py:69] global step:251, loss value: nan
+W1211 16:14:21.647356 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:21.647535 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:22.298090 139898040981248 resnet_imagenet_main_arion.py:69] global step:252, loss value: nan
+W1211 16:14:22.298302 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:22.298481 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:22.951714 139898040981248 resnet_imagenet_main_arion.py:69] global step:253, loss value: nan
+W1211 16:14:22.951926 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:22.952095 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:23.618922 139898040981248 resnet_imagenet_main_arion.py:69] global step:254, loss value: nan
+W1211 16:14:23.619134 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:23.619303 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:24.275897 139898040981248 resnet_imagenet_main_arion.py:69] global step:255, loss value: nan
+W1211 16:14:24.276121 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:24.276291 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:24.921787 139898040981248 resnet_imagenet_main_arion.py:69] global step:256, loss value: nan
+W1211 16:14:24.922011 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:24.922396 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:25.572268 139898040981248 resnet_imagenet_main_arion.py:69] global step:257, loss value: nan
+W1211 16:14:25.572481 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:25.572658 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:26.218590 139898040981248 resnet_imagenet_main_arion.py:69] global step:258, loss value: nan
+W1211 16:14:26.218799 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:26.218976 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:26.873013 139898040981248 resnet_imagenet_main_arion.py:69] global step:259, loss value: nan
+W1211 16:14:26.873224 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:26.873392 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:27.519834 139898040981248 resnet_imagenet_main_arion.py:69] global step:260, loss value: nan
+W1211 16:14:27.520051 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:27.520221 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:28.166218 139898040981248 resnet_imagenet_main_arion.py:69] global step:261, loss value: nan
+W1211 16:14:28.166436 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:28.166614 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:28.811333 139898040981248 resnet_imagenet_main_arion.py:69] global step:262, loss value: nan
+W1211 16:14:28.811546 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:28.811713 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:29.465834 139898040981248 resnet_imagenet_main_arion.py:69] global step:263, loss value: nan
+W1211 16:14:29.466043 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:29.466217 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:30.124156 139898040981248 resnet_imagenet_main_arion.py:69] global step:264, loss value: nan
+W1211 16:14:30.124388 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:30.124815 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:30.767878 139898040981248 resnet_imagenet_main_arion.py:69] global step:265, loss value: nan
+W1211 16:14:30.768085 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:30.768261 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:31.413994 139898040981248 resnet_imagenet_main_arion.py:69] global step:266, loss value: nan
+W1211 16:14:31.414206 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:31.414381 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:32.067183 139898040981248 resnet_imagenet_main_arion.py:69] global step:267, loss value: nan
+W1211 16:14:32.067399 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:32.067571 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:32.714435 139898040981248 resnet_imagenet_main_arion.py:69] global step:268, loss value: nan
+W1211 16:14:32.714647 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:32.714838 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:33.370515 139898040981248 resnet_imagenet_main_arion.py:69] global step:269, loss value: nan
+W1211 16:14:33.370723 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:33.370889 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:34.024797 139898040981248 resnet_imagenet_main_arion.py:69] global step:270, loss value: nan
+W1211 16:14:34.025006 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:34.025173 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:34.673195 139898040981248 resnet_imagenet_main_arion.py:69] global step:271, loss value: nan
+W1211 16:14:34.673415 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:34.673615 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:35.331857 139898040981248 resnet_imagenet_main_arion.py:69] global step:272, loss value: nan
+W1211 16:14:35.332066 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:35.332233 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:35.986924 139898040981248 resnet_imagenet_main_arion.py:69] global step:273, loss value: nan
+W1211 16:14:35.987134 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:35.987313 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:36.648667 139898040981248 resnet_imagenet_main_arion.py:69] global step:274, loss value: nan
+W1211 16:14:36.648905 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:36.649083 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:37.310364 139898040981248 resnet_imagenet_main_arion.py:69] global step:275, loss value: nan
+W1211 16:14:37.310578 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:37.310753 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:37.980755 139898040981248 resnet_imagenet_main_arion.py:69] global step:276, loss value: nan
+W1211 16:14:37.980970 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:37.981165 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:38.642219 139898040981248 resnet_imagenet_main_arion.py:69] global step:277, loss value: nan
+W1211 16:14:38.642437 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:38.642603 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:39.303995 139898040981248 resnet_imagenet_main_arion.py:69] global step:278, loss value: nan
+W1211 16:14:39.304210 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:39.304379 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:39.961757 139898040981248 resnet_imagenet_main_arion.py:69] global step:279, loss value: nan
+W1211 16:14:39.961967 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:39.962134 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:40.611131 139898040981248 resnet_imagenet_main_arion.py:69] global step:280, loss value: nan
+W1211 16:14:40.611364 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:40.611736 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:41.257261 139898040981248 resnet_imagenet_main_arion.py:69] global step:281, loss value: nan
+W1211 16:14:41.257470 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:41.257667 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:41.906586 139898040981248 resnet_imagenet_main_arion.py:69] global step:282, loss value: nan
+W1211 16:14:41.906800 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:41.906969 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:42.552314 139898040981248 resnet_imagenet_main_arion.py:69] global step:283, loss value: nan
+W1211 16:14:42.552537 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:42.552712 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:43.204946 139898040981248 resnet_imagenet_main_arion.py:69] global step:284, loss value: nan
+W1211 16:14:43.205157 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:43.205326 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:43.862977 139898040981248 resnet_imagenet_main_arion.py:69] global step:285, loss value: nan
+W1211 16:14:43.863201 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:43.863381 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:44.520337 139898040981248 resnet_imagenet_main_arion.py:69] global step:286, loss value: nan
+W1211 16:14:44.520551 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:44.520720 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:45.172456 139898040981248 resnet_imagenet_main_arion.py:69] global step:287, loss value: nan
+W1211 16:14:45.172667 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:45.172832 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:45.822592 139898040981248 resnet_imagenet_main_arion.py:69] global step:288, loss value: nan
+W1211 16:14:45.822803 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:45.823192 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:46.480405 139898040981248 resnet_imagenet_main_arion.py:69] global step:289, loss value: nan
+W1211 16:14:46.480626 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:46.480803 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:47.127437 139898040981248 resnet_imagenet_main_arion.py:69] global step:290, loss value: nan
+W1211 16:14:47.127646 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:47.127840 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:47.776045 139898040981248 resnet_imagenet_main_arion.py:69] global step:291, loss value: nan
+W1211 16:14:47.776258 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:47.776456 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:48.440090 139898040981248 resnet_imagenet_main_arion.py:69] global step:292, loss value: nan
+W1211 16:14:48.440317 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:48.440512 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:49.092595 139898040981248 resnet_imagenet_main_arion.py:69] global step:293, loss value: nan
+W1211 16:14:49.092820 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:49.093000 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:49.734211 139898040981248 resnet_imagenet_main_arion.py:69] global step:294, loss value: nan
+W1211 16:14:49.734424 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:49.734602 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:50.387584 139898040981248 resnet_imagenet_main_arion.py:69] global step:295, loss value: nan
+W1211 16:14:50.387792 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:50.387983 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:51.049299 139898040981248 resnet_imagenet_main_arion.py:69] global step:296, loss value: nan
+W1211 16:14:51.049516 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:51.049892 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:51.690016 139898040981248 resnet_imagenet_main_arion.py:69] global step:297, loss value: nan
+W1211 16:14:51.690227 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:51.690392 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:52.342448 139898040981248 resnet_imagenet_main_arion.py:69] global step:298, loss value: nan
+W1211 16:14:52.342671 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:52.342844 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:52.991512 139898040981248 resnet_imagenet_main_arion.py:69] global step:299, loss value: nan
+W1211 16:14:52.991727 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:52.991895 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:53.640479 139898040981248 resnet_imagenet_main_arion.py:69] global step:300, loss value: nan
+W1211 16:14:53.640690 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:53.640864 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:54.290685 139898040981248 resnet_imagenet_main_arion.py:69] global step:301, loss value: nan
+W1211 16:14:54.290914 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:54.291104 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:54.944908 139898040981248 resnet_imagenet_main_arion.py:69] global step:302, loss value: nan
+W1211 16:14:54.945139 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:54.945315 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:55.597594 139898040981248 resnet_imagenet_main_arion.py:69] global step:303, loss value: nan
+W1211 16:14:55.597819 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:55.597987 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:56.261698 139898040981248 resnet_imagenet_main_arion.py:69] global step:304, loss value: nan
+W1211 16:14:56.261910 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:56.262079 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:56.909814 139898040981248 resnet_imagenet_main_arion.py:69] global step:305, loss value: nan
+W1211 16:14:56.910026 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:56.910196 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:57.559380 139898040981248 resnet_imagenet_main_arion.py:69] global step:306, loss value: nan
+W1211 16:14:57.559597 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:57.559765 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:58.204356 139898040981248 resnet_imagenet_main_arion.py:69] global step:307, loss value: nan
+W1211 16:14:58.204574 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:58.204742 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:58.856478 139898040981248 resnet_imagenet_main_arion.py:69] global step:308, loss value: nan
+W1211 16:14:58.856704 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:58.856886 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:14:59.521974 139898040981248 resnet_imagenet_main_arion.py:69] global step:309, loss value: nan
+W1211 16:14:59.522199 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:14:59.522383 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:00.171797 139898040981248 resnet_imagenet_main_arion.py:69] global step:310, loss value: nan
+W1211 16:15:00.172015 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:00.172192 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:00.824466 139898040981248 resnet_imagenet_main_arion.py:69] global step:311, loss value: nan
+W1211 16:15:00.824681 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:00.824862 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:01.482331 139898040981248 resnet_imagenet_main_arion.py:69] global step:312, loss value: nan
+I1211 16:15:01.482478 139898040981248 resnet_imagenet_main_arion.py:77] global step:312, time_taken: 50.903234,examples_per_second: 49.034212
+I1211 16:15:01.482788 139898040981248 resnet_imagenet_main_arion.py:85] epoch':3, 'time_taken': 50.903428
+W1211 16:15:01.482946 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:01.483158 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:02.135762 139898040981248 resnet_imagenet_main_arion.py:69] global step:313, loss value: nan
+W1211 16:15:02.135974 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:02.136151 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:02.785796 139898040981248 resnet_imagenet_main_arion.py:69] global step:314, loss value: nan
+W1211 16:15:02.786018 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:02.786199 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:03.435879 139898040981248 resnet_imagenet_main_arion.py:69] global step:315, loss value: nan
+W1211 16:15:03.436112 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:03.436290 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:04.085263 139898040981248 resnet_imagenet_main_arion.py:69] global step:316, loss value: nan
+W1211 16:15:04.085478 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:04.085670 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:04.749400 139898040981248 resnet_imagenet_main_arion.py:69] global step:317, loss value: nan
+W1211 16:15:04.749646 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:04.749819 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:05.409920 139898040981248 resnet_imagenet_main_arion.py:69] global step:318, loss value: nan
+W1211 16:15:05.410132 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:05.410301 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:06.074677 139898040981248 resnet_imagenet_main_arion.py:69] global step:319, loss value: nan
+W1211 16:15:06.074905 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:06.075099 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:06.743638 139898040981248 resnet_imagenet_main_arion.py:69] global step:320, loss value: nan
+W1211 16:15:06.743927 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:06.744268 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:07.399878 139898040981248 resnet_imagenet_main_arion.py:69] global step:321, loss value: nan
+W1211 16:15:07.400080 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:07.400261 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:08.057126 139898040981248 resnet_imagenet_main_arion.py:69] global step:322, loss value: nan
+W1211 16:15:08.057336 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:08.057513 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:08.710014 139898040981248 resnet_imagenet_main_arion.py:69] global step:323, loss value: nan
+W1211 16:15:08.710239 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:08.710419 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:09.376776 139898040981248 resnet_imagenet_main_arion.py:69] global step:324, loss value: nan
+W1211 16:15:09.376995 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:09.377151 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:10.031248 139898040981248 resnet_imagenet_main_arion.py:69] global step:325, loss value: nan
+W1211 16:15:10.031461 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:10.031626 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:10.681376 139898040981248 resnet_imagenet_main_arion.py:69] global step:326, loss value: nan
+W1211 16:15:10.681638 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:10.681805 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:11.336224 139898040981248 resnet_imagenet_main_arion.py:69] global step:327, loss value: nan
+W1211 16:15:11.336445 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:11.336621 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:11.985952 139898040981248 resnet_imagenet_main_arion.py:69] global step:328, loss value: nan
+W1211 16:15:11.986165 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:11.986511 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:12.643260 139898040981248 resnet_imagenet_main_arion.py:69] global step:329, loss value: nan
+W1211 16:15:12.643480 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:12.643658 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:13.283583 139898040981248 resnet_imagenet_main_arion.py:69] global step:330, loss value: nan
+W1211 16:15:13.283797 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:13.283958 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:13.940138 139898040981248 resnet_imagenet_main_arion.py:69] global step:331, loss value: nan
+W1211 16:15:13.940346 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:13.940524 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:14.590085 139898040981248 resnet_imagenet_main_arion.py:69] global step:332, loss value: nan
+W1211 16:15:14.590320 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:14.590497 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:15.246476 139898040981248 resnet_imagenet_main_arion.py:69] global step:333, loss value: nan
+W1211 16:15:15.246701 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:15.246879 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:15.901948 139898040981248 resnet_imagenet_main_arion.py:69] global step:334, loss value: nan
+W1211 16:15:15.902167 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:15.902342 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:16.550766 139898040981248 resnet_imagenet_main_arion.py:69] global step:335, loss value: nan
+W1211 16:15:16.550979 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:16.551146 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:17.221166 139898040981248 resnet_imagenet_main_arion.py:69] global step:336, loss value: nan
+W1211 16:15:17.221388 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:17.221820 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:17.887856 139898040981248 resnet_imagenet_main_arion.py:69] global step:337, loss value: nan
+W1211 16:15:17.888058 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:17.888229 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:18.535620 139898040981248 resnet_imagenet_main_arion.py:69] global step:338, loss value: nan
+W1211 16:15:18.535829 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:18.536000 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:19.189678 139898040981248 resnet_imagenet_main_arion.py:69] global step:339, loss value: nan
+W1211 16:15:19.189890 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:19.190057 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:19.831837 139898040981248 resnet_imagenet_main_arion.py:69] global step:340, loss value: nan
+W1211 16:15:19.832048 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:19.832238 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:20.477901 139898040981248 resnet_imagenet_main_arion.py:69] global step:341, loss value: nan
+W1211 16:15:20.478116 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:20.478300 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:21.135029 139898040981248 resnet_imagenet_main_arion.py:69] global step:342, loss value: nan
+W1211 16:15:21.135236 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:21.135422 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:21.778633 139898040981248 resnet_imagenet_main_arion.py:69] global step:343, loss value: nan
+W1211 16:15:21.778849 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:21.779038 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:22.423777 139898040981248 resnet_imagenet_main_arion.py:69] global step:344, loss value: nan
+W1211 16:15:22.424000 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:22.424352 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:23.068856 139898040981248 resnet_imagenet_main_arion.py:69] global step:345, loss value: nan
+W1211 16:15:23.069074 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:23.069290 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:23.715660 139898040981248 resnet_imagenet_main_arion.py:69] global step:346, loss value: nan
+W1211 16:15:23.715869 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:23.716058 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:24.380708 139898040981248 resnet_imagenet_main_arion.py:69] global step:347, loss value: nan
+W1211 16:15:24.380938 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:24.381115 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:25.044564 139898040981248 resnet_imagenet_main_arion.py:69] global step:348, loss value: nan
+W1211 16:15:25.044788 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:25.044972 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:25.709766 139898040981248 resnet_imagenet_main_arion.py:69] global step:349, loss value: nan
+W1211 16:15:25.709990 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:25.710172 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:26.365935 139898040981248 resnet_imagenet_main_arion.py:69] global step:350, loss value: nan
+W1211 16:15:26.366150 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:26.366319 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:27.023610 139898040981248 resnet_imagenet_main_arion.py:69] global step:351, loss value: nan
+W1211 16:15:27.023833 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:27.023993 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:27.694071 139898040981248 resnet_imagenet_main_arion.py:69] global step:352, loss value: nan
+W1211 16:15:27.694283 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:27.694675 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:28.377180 139898040981248 resnet_imagenet_main_arion.py:69] global step:353, loss value: nan
+W1211 16:15:28.377395 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:28.377587 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:29.061127 139898040981248 resnet_imagenet_main_arion.py:69] global step:354, loss value: nan
+W1211 16:15:29.061377 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:29.061542 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:29.726652 139898040981248 resnet_imagenet_main_arion.py:69] global step:355, loss value: nan
+W1211 16:15:29.726861 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:29.727050 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:30.408724 139898040981248 resnet_imagenet_main_arion.py:69] global step:356, loss value: nan
+W1211 16:15:30.408925 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:30.409112 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:31.077702 139898040981248 resnet_imagenet_main_arion.py:69] global step:357, loss value: nan
+W1211 16:15:31.077923 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:31.078100 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:31.770433 139898040981248 resnet_imagenet_main_arion.py:69] global step:358, loss value: nan
+W1211 16:15:31.770641 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:31.770798 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:32.443847 139898040981248 resnet_imagenet_main_arion.py:69] global step:359, loss value: nan
+W1211 16:15:32.444065 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:32.444243 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:33.100916 139898040981248 resnet_imagenet_main_arion.py:69] global step:360, loss value: nan
+W1211 16:15:33.101168 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:33.101492 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:33.780603 139898040981248 resnet_imagenet_main_arion.py:69] global step:361, loss value: nan
+W1211 16:15:33.780831 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:33.781025 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:34.471599 139898040981248 resnet_imagenet_main_arion.py:69] global step:362, loss value: nan
+W1211 16:15:34.471825 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:34.471994 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:35.128018 139898040981248 resnet_imagenet_main_arion.py:69] global step:363, loss value: nan
+W1211 16:15:35.128243 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:35.128424 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:35.783396 139898040981248 resnet_imagenet_main_arion.py:69] global step:364, loss value: nan
+W1211 16:15:35.783620 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:35.783801 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:36.452788 139898040981248 resnet_imagenet_main_arion.py:69] global step:365, loss value: nan
+W1211 16:15:36.453003 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:36.453195 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:37.108235 139898040981248 resnet_imagenet_main_arion.py:69] global step:366, loss value: nan
+W1211 16:15:37.108451 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:37.108618 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:37.759269 139898040981248 resnet_imagenet_main_arion.py:69] global step:367, loss value: nan
+W1211 16:15:37.759512 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:37.759713 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:38.430607 139898040981248 resnet_imagenet_main_arion.py:69] global step:368, loss value: nan
+W1211 16:15:38.430818 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:38.430982 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:39.110375 139898040981248 resnet_imagenet_main_arion.py:69] global step:369, loss value: nan
+W1211 16:15:39.110600 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:39.110781 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:39.775218 139898040981248 resnet_imagenet_main_arion.py:69] global step:370, loss value: nan
+W1211 16:15:39.775439 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:39.775618 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:40.455771 139898040981248 resnet_imagenet_main_arion.py:69] global step:371, loss value: nan
+W1211 16:15:40.455991 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:40.456157 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:41.122577 139898040981248 resnet_imagenet_main_arion.py:69] global step:372, loss value: nan
+W1211 16:15:41.122803 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:41.122983 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:41.785585 139898040981248 resnet_imagenet_main_arion.py:69] global step:373, loss value: nan
+W1211 16:15:41.785799 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:41.785965 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:42.462798 139898040981248 resnet_imagenet_main_arion.py:69] global step:374, loss value: nan
+W1211 16:15:42.463025 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:42.463194 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:43.123579 139898040981248 resnet_imagenet_main_arion.py:69] global step:375, loss value: nan
+W1211 16:15:43.123805 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:43.123976 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:43.795565 139898040981248 resnet_imagenet_main_arion.py:69] global step:376, loss value: nan
+W1211 16:15:43.795781 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:43.796173 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:44.469719 139898040981248 resnet_imagenet_main_arion.py:69] global step:377, loss value: nan
+W1211 16:15:44.469929 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:44.470098 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:45.120903 139898040981248 resnet_imagenet_main_arion.py:69] global step:378, loss value: nan
+W1211 16:15:45.121105 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:45.121266 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:45.785266 139898040981248 resnet_imagenet_main_arion.py:69] global step:379, loss value: nan
+W1211 16:15:45.785479 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:45.785675 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:46.437788 139898040981248 resnet_imagenet_main_arion.py:69] global step:380, loss value: nan
+W1211 16:15:46.438007 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:46.438176 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:47.093397 139898040981248 resnet_imagenet_main_arion.py:69] global step:381, loss value: nan
+W1211 16:15:47.093649 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:47.093816 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:47.734281 139898040981248 resnet_imagenet_main_arion.py:69] global step:382, loss value: nan
+W1211 16:15:47.734493 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:47.734685 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:48.375910 139898040981248 resnet_imagenet_main_arion.py:69] global step:383, loss value: nan
+W1211 16:15:48.376230 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:48.376482 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:49.033074 139898040981248 resnet_imagenet_main_arion.py:69] global step:384, loss value: nan
+W1211 16:15:49.033299 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:49.033982 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:49.713763 139898040981248 resnet_imagenet_main_arion.py:69] global step:385, loss value: nan
+W1211 16:15:49.713985 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:49.714171 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:50.379133 139898040981248 resnet_imagenet_main_arion.py:69] global step:386, loss value: nan
+W1211 16:15:50.379336 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:50.379492 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:51.034558 139898040981248 resnet_imagenet_main_arion.py:69] global step:387, loss value: nan
+W1211 16:15:51.034760 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:51.034917 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:51.692698 139898040981248 resnet_imagenet_main_arion.py:69] global step:388, loss value: nan
+W1211 16:15:51.692899 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:51.693082 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:52.351368 139898040981248 resnet_imagenet_main_arion.py:69] global step:389, loss value: nan
+W1211 16:15:52.351590 139898040981248 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1211 16:15:52.351757 139898040981248 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1211 16:15:53.006422 139898040981248 resnet_imagenet_main_arion.py:69] global step:390, loss value: nan
+I1211 16:15:53.006671 139898040981248 resnet_imagenet_main_arion.py:77] global step:390, time_taken: 51.524194,examples_per_second: 48.443261
+I1211 16:15:53.006734 139898040981248 resnet_imagenet_main_arion.py:85] epoch':4, 'time_taken': 51.523863
+I1211 16:15:53.006784 139898040981248 resnet_imagenet_main_arion.py:53] total time take: 261.082525,averaged examples_per_second: 47.916110
+I1211 16:15:53.065869 139898040981248 coordinator.py:62] Joining workers...
+I1211 16:15:53.066082 139898040981248 cluster.py:173] Terminating cluster...

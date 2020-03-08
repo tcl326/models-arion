@@ -1,0 +1,16 @@
+nodes:
+  # # single-node experiment
+  # - address: localhost
+  #   gpus: [0]
+  #   chief: true
+
+  #multi-nodes experiment
+ - address: 10.20.41.132
+   gpus: [0,1]
+   chief: true
+ - address: 10.20.41.120
+   gpus: [0,1]
+ssh:
+ username: 'zeya.wang'
+ key_file: '/home/baoyu/.ssh/id_rsa'
+ python_venv: 'source /tmp/arion/env/bin/activate'

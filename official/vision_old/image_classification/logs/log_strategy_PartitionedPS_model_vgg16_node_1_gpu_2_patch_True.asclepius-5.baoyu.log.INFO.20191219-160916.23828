@@ -1,0 +1,697 @@
+I1219 16:09:16.763249 139713348335360 cluster.py:45] ClusterSpec: {'worker': ['localhost:15000']}
+W1219 16:09:17.379594 139713348335360 deprecation.py:323] From /storage/baoyu/arion/env/lib/python3.6/site-packages/tensorflow_core/python/ops/image_ops_impl.py:2547: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W1219 16:09:17.607219 139713348335360 deprecation.py:506] From /storage/baoyu/arion/env/lib/python3.6/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1637: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+I1219 16:09:17.774799 139713348335360 graph_item.py:48] Patched optimizer: Adam 
+with args: (<tensorflow.python.keras.optimizer_v2.adam.Adam object at 0x7f110dd20d68>,) 
+kwargs: {'learning_rate': 0.01, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-08}
+I1219 16:09:17.888618 139713348335360 graph_item.py:64] Registered grads: 
+ [<tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 3, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 64, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block1_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 64, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block2_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 256) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(256,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(256,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv3/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block3_conv3/BiasAdd_grad/BiasAddGrad:0' shape=(256,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 256, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv3/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block4_conv3/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv1/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv2/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv3/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/block5_conv3/BiasAdd_grad/BiasAddGrad:0' shape=(512,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc1/MatMul_grad/MatMul_1:0' shape=(25088, 4096) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc1/BiasAdd_grad/BiasAddGrad:0' shape=(4096,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc2/MatMul_grad/MatMul_1:0' shape=(4096, 4096) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/fc2/BiasAdd_grad/BiasAddGrad:0' shape=(4096,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/predictions/MatMul_grad/MatMul_1:0' shape=(4096, 1001) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/vgg16/predictions/BiasAdd_grad/BiasAddGrad:0' shape=(1001,) dtype=float32>] with targets: 
+ [<tf.Variable 'block1_conv1/kernel:0' shape=(3, 3, 3, 64) dtype=float32>, <tf.Variable 'block1_conv1/bias:0' shape=(64,) dtype=float32>, <tf.Variable 'block1_conv2/kernel:0' shape=(3, 3, 64, 64) dtype=float32>, <tf.Variable 'block1_conv2/bias:0' shape=(64,) dtype=float32>, <tf.Variable 'block2_conv1/kernel:0' shape=(3, 3, 64, 128) dtype=float32>, <tf.Variable 'block2_conv1/bias:0' shape=(128,) dtype=float32>, <tf.Variable 'block2_conv2/kernel:0' shape=(3, 3, 128, 128) dtype=float32>, <tf.Variable 'block2_conv2/bias:0' shape=(128,) dtype=float32>, <tf.Variable 'block3_conv1/kernel:0' shape=(3, 3, 128, 256) dtype=float32>, <tf.Variable 'block3_conv1/bias:0' shape=(256,) dtype=float32>, <tf.Variable 'block3_conv2/kernel:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv2/bias:0' shape=(256,) dtype=float32>, <tf.Variable 'block3_conv3/kernel:0' shape=(3, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv3/bias:0' shape=(256,) dtype=float32>, <tf.Variable 'block4_conv1/kernel:0' shape=(3, 3, 256, 512) dtype=float32>, <tf.Variable 'block4_conv1/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block4_conv2/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv2/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block4_conv3/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv3/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block5_conv1/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv1/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block5_conv2/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv2/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'block5_conv3/kernel:0' shape=(3, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv3/bias:0' shape=(512,) dtype=float32>, <tf.Variable 'fc1/kernel:0' shape=(25088, 4096) dtype=float32>, <tf.Variable 'fc1/bias:0' shape=(4096,) dtype=float32>, <tf.Variable 'fc2/kernel:0' shape=(4096, 4096) dtype=float32>, <tf.Variable 'fc2/bias:0' shape=(4096,) dtype=float32>, <tf.Variable 'predictions/kernel:0' shape=(4096, 1001) dtype=float32>, <tf.Variable 'predictions/bias:0' shape=(1001,) dtype=float32>]
+I1219 16:09:18.124590 139713348335360 arion.py:72] Raw strategy: id: "20191219T210918M120859"
+path: "/tmp/arion/strategies/20191219T210918M120859"
+node_config {
+  var_name: "block1_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+graph_config {
+  replicas: "localhost:GPU:0"
+  replicas: "localhost:GPU:1"
+}
+
+I1219 16:09:18.126008 139713348335360 arion.py:76] Compiled strategy: id: "20191219T210918M120859"
+path: "/tmp/arion/strategies/20191219T210918M120859"
+node_config {
+  var_name: "block1_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block1_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block2_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block3_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block4_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "block5_conv3/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc1/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "fc2/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+graph_config {
+  replicas: "/job:worker/task:0/device:GPU:0"
+  replicas: "/job:worker/task:0/device:GPU:1"
+}
+
+I1219 16:09:18.217864 139713348335360 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/original
+I1219 16:09:18.219679 139713348335360 partitioner.py:74] Partitioning variable block1_conv1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.219808 139713348335360 partitioner.py:74] Partitioning variable block1_conv1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.219907 139713348335360 partitioner.py:74] Partitioning variable block1_conv2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.219997 139713348335360 partitioner.py:74] Partitioning variable block1_conv2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.220084 139713348335360 partitioner.py:74] Partitioning variable block2_conv1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.220170 139713348335360 partitioner.py:74] Partitioning variable block2_conv1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.220256 139713348335360 partitioner.py:74] Partitioning variable block2_conv2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.220340 139713348335360 partitioner.py:74] Partitioning variable block2_conv2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.220425 139713348335360 partitioner.py:74] Partitioning variable block3_conv1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.220508 139713348335360 partitioner.py:74] Partitioning variable block3_conv1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.220594 139713348335360 partitioner.py:74] Partitioning variable block3_conv2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.220678 139713348335360 partitioner.py:74] Partitioning variable block3_conv2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.221613 139713348335360 partitioner.py:74] Partitioning variable block3_conv3/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.221731 139713348335360 partitioner.py:74] Partitioning variable block3_conv3/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.221841 139713348335360 partitioner.py:74] Partitioning variable block4_conv1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.221927 139713348335360 partitioner.py:74] Partitioning variable block4_conv1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222009 139713348335360 partitioner.py:74] Partitioning variable block4_conv2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222101 139713348335360 partitioner.py:74] Partitioning variable block4_conv2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222181 139713348335360 partitioner.py:74] Partitioning variable block4_conv3/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222259 139713348335360 partitioner.py:74] Partitioning variable block4_conv3/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222337 139713348335360 partitioner.py:74] Partitioning variable block5_conv1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222417 139713348335360 partitioner.py:74] Partitioning variable block5_conv1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222497 139713348335360 partitioner.py:74] Partitioning variable block5_conv2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222579 139713348335360 partitioner.py:74] Partitioning variable block5_conv2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222657 139713348335360 partitioner.py:74] Partitioning variable block5_conv3/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222734 139713348335360 partitioner.py:74] Partitioning variable block5_conv3/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222811 139713348335360 partitioner.py:74] Partitioning variable fc1/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222888 139713348335360 partitioner.py:74] Partitioning variable fc1/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.222964 139713348335360 partitioner.py:74] Partitioning variable fc2/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.223040 139713348335360 partitioner.py:74] Partitioning variable fc2/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.223117 139713348335360 partitioner.py:74] Partitioning variable predictions/kernel:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.223196 139713348335360 partitioner.py:74] Partitioning variable predictions/bias:0 across ['/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0', '/job:worker/task:0/device:CPU:0']
+I1219 16:09:18.977551 139713348335360 graph_item.py:48] Patched optimizer: Adam 
+with args: (<tensorflow.python.keras.optimizer_v2.adam.Adam object at 0x7f110d81a860>,) 
+kwargs: {'learning_rate': 0.01, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-08}
+I1219 16:09:18.979083 139713348335360 graph_item.py:64] Registered grads: 
+ [<tf.Tensor 'gradients/splits/split_block1_conv1/kernel:0' shape=(1, 3, 3, 64) dtype=float32>, <tf.Tensor 'gradients/splits/split_block1_conv1/kernel:1' shape=(1, 3, 3, 64) dtype=float32>, <tf.Tensor 'gradients/splits/split_block1_conv1/kernel:2' shape=(1, 3, 3, 64) dtype=float32>, <tf.Tensor 'gradients/splits/split_block1_conv1/bias:0' shape=(32,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block1_conv1/bias:1' shape=(32,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block1_conv2/kernel:0' shape=(1, 3, 64, 64) dtype=float32>, <tf.Tensor 'gradients/splits/split_block1_conv2/kernel:1' shape=(1, 3, 64, 64) dtype=float32>, <tf.Tensor 'gradients/splits/split_block1_conv2/kernel:2' shape=(1, 3, 64, 64) dtype=float32>, <tf.Tensor 'gradients/splits/split_block1_conv2/bias:0' shape=(32,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block1_conv2/bias:1' shape=(32,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block2_conv1/kernel:0' shape=(1, 3, 64, 128) dtype=float32>, <tf.Tensor 'gradients/splits/split_block2_conv1/kernel:1' shape=(1, 3, 64, 128) dtype=float32>, <tf.Tensor 'gradients/splits/split_block2_conv1/kernel:2' shape=(1, 3, 64, 128) dtype=float32>, <tf.Tensor 'gradients/splits/split_block2_conv1/bias:0' shape=(64,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block2_conv1/bias:1' shape=(64,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block2_conv2/kernel:0' shape=(1, 3, 128, 128) dtype=float32>, <tf.Tensor 'gradients/splits/split_block2_conv2/kernel:1' shape=(1, 3, 128, 128) dtype=float32>, <tf.Tensor 'gradients/splits/split_block2_conv2/kernel:2' shape=(1, 3, 128, 128) dtype=float32>, <tf.Tensor 'gradients/splits/split_block2_conv2/bias:0' shape=(64,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block2_conv2/bias:1' shape=(64,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv1/kernel:0' shape=(1, 3, 128, 256) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv1/kernel:1' shape=(1, 3, 128, 256) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv1/kernel:2' shape=(1, 3, 128, 256) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv1/bias:0' shape=(128,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv1/bias:1' shape=(128,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv2/kernel:0' shape=(1, 3, 256, 256) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv2/kernel:1' shape=(1, 3, 256, 256) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv2/kernel:2' shape=(1, 3, 256, 256) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv2/bias:0' shape=(128,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv2/bias:1' shape=(128,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv3/kernel:0' shape=(1, 3, 256, 256) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv3/kernel:1' shape=(1, 3, 256, 256) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv3/kernel:2' shape=(1, 3, 256, 256) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv3/bias:0' shape=(128,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block3_conv3/bias:1' shape=(128,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv1/kernel:0' shape=(1, 3, 256, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv1/kernel:1' shape=(1, 3, 256, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv1/kernel:2' shape=(1, 3, 256, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv1/bias:0' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv1/bias:1' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv2/kernel:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv2/kernel:1' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv2/kernel:2' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv2/bias:0' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv2/bias:1' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv3/kernel:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv3/kernel:1' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv3/kernel:2' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv3/bias:0' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block4_conv3/bias:1' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv1/kernel:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv1/kernel:1' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv1/kernel:2' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv1/bias:0' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv1/bias:1' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv2/kernel:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv2/kernel:1' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv2/kernel:2' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv2/bias:0' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv2/bias:1' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv3/kernel:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv3/kernel:1' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv3/kernel:2' shape=(1, 3, 512, 512) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv3/bias:0' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_block5_conv3/bias:1' shape=(256,) dtype=float32>, <tf.Tensor 'gradients/splits/split_fc1/kernel:0' shape=(12544, 4096) dtype=float32>, <tf.Tensor 'gradients/splits/split_fc1/kernel:1' shape=(12544, 4096) dtype=float32>, <tf.Tensor 'gradients/splits/split_fc1/bias:0' shape=(2048,) dtype=float32>, <tf.Tensor 'gradients/splits/split_fc1/bias:1' shape=(2048,) dtype=float32>, <tf.Tensor 'gradients/splits/split_fc2/kernel:0' shape=(2048, 4096) dtype=float32>, <tf.Tensor 'gradients/splits/split_fc2/kernel:1' shape=(2048, 4096) dtype=float32>, <tf.Tensor 'gradients/splits/split_fc2/bias:0' shape=(2048,) dtype=float32>, <tf.Tensor 'gradients/splits/split_fc2/bias:1' shape=(2048,) dtype=float32>, <tf.Tensor 'gradients/splits/split_predictions/kernel:0' shape=(2048, 1001) dtype=float32>, <tf.Tensor 'gradients/splits/split_predictions/kernel:1' shape=(2048, 1001) dtype=float32>, <tf.Tensor 'gradients/splits/split_predictions/bias:0' shape=(143,) dtype=float32>, <tf.Tensor 'gradients/splits/split_predictions/bias:1' shape=(143,) dtype=float32>, <tf.Tensor 'gradients/splits/split_predictions/bias:2' shape=(143,) dtype=float32>, <tf.Tensor 'gradients/splits/split_predictions/bias:3' shape=(143,) dtype=float32>, <tf.Tensor 'gradients/splits/split_predictions/bias:4' shape=(143,) dtype=float32>, <tf.Tensor 'gradients/splits/split_predictions/bias:5' shape=(143,) dtype=float32>, <tf.Tensor 'gradients/splits/split_predictions/bias:6' shape=(143,) dtype=float32>] with targets: 
+ [<tf.Variable 'block1_conv1/kernel/part_0:0' shape=(1, 3, 3, 64) dtype=float32>, <tf.Variable 'block1_conv1/kernel/part_1:0' shape=(1, 3, 3, 64) dtype=float32>, <tf.Variable 'block1_conv1/kernel/part_2:0' shape=(1, 3, 3, 64) dtype=float32>, <tf.Variable 'block1_conv1/bias/part_0:0' shape=(32,) dtype=float32>, <tf.Variable 'block1_conv1/bias/part_1:0' shape=(32,) dtype=float32>, <tf.Variable 'block1_conv2/kernel/part_0:0' shape=(1, 3, 64, 64) dtype=float32>, <tf.Variable 'block1_conv2/kernel/part_1:0' shape=(1, 3, 64, 64) dtype=float32>, <tf.Variable 'block1_conv2/kernel/part_2:0' shape=(1, 3, 64, 64) dtype=float32>, <tf.Variable 'block1_conv2/bias/part_0:0' shape=(32,) dtype=float32>, <tf.Variable 'block1_conv2/bias/part_1:0' shape=(32,) dtype=float32>, <tf.Variable 'block2_conv1/kernel/part_0:0' shape=(1, 3, 64, 128) dtype=float32>, <tf.Variable 'block2_conv1/kernel/part_1:0' shape=(1, 3, 64, 128) dtype=float32>, <tf.Variable 'block2_conv1/kernel/part_2:0' shape=(1, 3, 64, 128) dtype=float32>, <tf.Variable 'block2_conv1/bias/part_0:0' shape=(64,) dtype=float32>, <tf.Variable 'block2_conv1/bias/part_1:0' shape=(64,) dtype=float32>, <tf.Variable 'block2_conv2/kernel/part_0:0' shape=(1, 3, 128, 128) dtype=float32>, <tf.Variable 'block2_conv2/kernel/part_1:0' shape=(1, 3, 128, 128) dtype=float32>, <tf.Variable 'block2_conv2/kernel/part_2:0' shape=(1, 3, 128, 128) dtype=float32>, <tf.Variable 'block2_conv2/bias/part_0:0' shape=(64,) dtype=float32>, <tf.Variable 'block2_conv2/bias/part_1:0' shape=(64,) dtype=float32>, <tf.Variable 'block3_conv1/kernel/part_0:0' shape=(1, 3, 128, 256) dtype=float32>, <tf.Variable 'block3_conv1/kernel/part_1:0' shape=(1, 3, 128, 256) dtype=float32>, <tf.Variable 'block3_conv1/kernel/part_2:0' shape=(1, 3, 128, 256) dtype=float32>, <tf.Variable 'block3_conv1/bias/part_0:0' shape=(128,) dtype=float32>, <tf.Variable 'block3_conv1/bias/part_1:0' shape=(128,) dtype=float32>, <tf.Variable 'block3_conv2/kernel/part_0:0' shape=(1, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv2/kernel/part_1:0' shape=(1, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv2/kernel/part_2:0' shape=(1, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv2/bias/part_0:0' shape=(128,) dtype=float32>, <tf.Variable 'block3_conv2/bias/part_1:0' shape=(128,) dtype=float32>, <tf.Variable 'block3_conv3/kernel/part_0:0' shape=(1, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv3/kernel/part_1:0' shape=(1, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv3/kernel/part_2:0' shape=(1, 3, 256, 256) dtype=float32>, <tf.Variable 'block3_conv3/bias/part_0:0' shape=(128,) dtype=float32>, <tf.Variable 'block3_conv3/bias/part_1:0' shape=(128,) dtype=float32>, <tf.Variable 'block4_conv1/kernel/part_0:0' shape=(1, 3, 256, 512) dtype=float32>, <tf.Variable 'block4_conv1/kernel/part_1:0' shape=(1, 3, 256, 512) dtype=float32>, <tf.Variable 'block4_conv1/kernel/part_2:0' shape=(1, 3, 256, 512) dtype=float32>, <tf.Variable 'block4_conv1/bias/part_0:0' shape=(256,) dtype=float32>, <tf.Variable 'block4_conv1/bias/part_1:0' shape=(256,) dtype=float32>, <tf.Variable 'block4_conv2/kernel/part_0:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv2/kernel/part_1:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv2/kernel/part_2:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv2/bias/part_0:0' shape=(256,) dtype=float32>, <tf.Variable 'block4_conv2/bias/part_1:0' shape=(256,) dtype=float32>, <tf.Variable 'block4_conv3/kernel/part_0:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv3/kernel/part_1:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv3/kernel/part_2:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block4_conv3/bias/part_0:0' shape=(256,) dtype=float32>, <tf.Variable 'block4_conv3/bias/part_1:0' shape=(256,) dtype=float32>, <tf.Variable 'block5_conv1/kernel/part_0:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv1/kernel/part_1:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv1/kernel/part_2:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv1/bias/part_0:0' shape=(256,) dtype=float32>, <tf.Variable 'block5_conv1/bias/part_1:0' shape=(256,) dtype=float32>, <tf.Variable 'block5_conv2/kernel/part_0:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv2/kernel/part_1:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv2/kernel/part_2:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv2/bias/part_0:0' shape=(256,) dtype=float32>, <tf.Variable 'block5_conv2/bias/part_1:0' shape=(256,) dtype=float32>, <tf.Variable 'block5_conv3/kernel/part_0:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv3/kernel/part_1:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv3/kernel/part_2:0' shape=(1, 3, 512, 512) dtype=float32>, <tf.Variable 'block5_conv3/bias/part_0:0' shape=(256,) dtype=float32>, <tf.Variable 'block5_conv3/bias/part_1:0' shape=(256,) dtype=float32>, <tf.Variable 'fc1/kernel/part_0:0' shape=(12544, 4096) dtype=float32>, <tf.Variable 'fc1/kernel/part_1:0' shape=(12544, 4096) dtype=float32>, <tf.Variable 'fc1/bias/part_0:0' shape=(2048,) dtype=float32>, <tf.Variable 'fc1/bias/part_1:0' shape=(2048,) dtype=float32>, <tf.Variable 'fc2/kernel/part_0:0' shape=(2048, 4096) dtype=float32>, <tf.Variable 'fc2/kernel/part_1:0' shape=(2048, 4096) dtype=float32>, <tf.Variable 'fc2/bias/part_0:0' shape=(2048,) dtype=float32>, <tf.Variable 'fc2/bias/part_1:0' shape=(2048,) dtype=float32>, <tf.Variable 'predictions/kernel/part_0:0' shape=(2048, 1001) dtype=float32>, <tf.Variable 'predictions/kernel/part_1:0' shape=(2048, 1001) dtype=float32>, <tf.Variable 'predictions/bias/part_0:0' shape=(143,) dtype=float32>, <tf.Variable 'predictions/bias/part_1:0' shape=(143,) dtype=float32>, <tf.Variable 'predictions/bias/part_2:0' shape=(143,) dtype=float32>, <tf.Variable 'predictions/bias/part_3:0' shape=(143,) dtype=float32>, <tf.Variable 'predictions/bias/part_4:0' shape=(143,) dtype=float32>, <tf.Variable 'predictions/bias/part_5:0' shape=(143,) dtype=float32>, <tf.Variable 'predictions/bias/part_6:0' shape=(143,) dtype=float32>]
+I1219 16:09:19.924923 139713348335360 partitioner.py:56] Successfully partitioned variables
+I1219 16:09:19.926031 139713348335360 graph_transformer.py:81] Local replica devices: ['/job:worker/task:0/device:GPU:0', '/job:worker/task:0/device:GPU:1']
+I1219 16:09:19.926500 139713348335360 replicator.py:28] Local replica devices: ['/job:worker/task:0/device:GPU:0', '/job:worker/task:0/device:GPU:1']
+I1219 16:09:21.323643 139713348335360 replicator.py:44] Successfully replicated operations
+I1219 16:09:22.154698 139713348335360 graph_transformer.py:51] Successfully applied local in-graph replication
+I1219 16:09:22.620387 139713348335360 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/after-in-graph
+I1219 16:09:24.812759 139713348335360 graph_transformer.py:56] Successfully applied between-graph replication
+I1219 16:09:24.812986 139713348335360 graph_transformer.py:59] Successfully built transformed graph
+I1219 16:09:25.267016 139713348335360 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/transformed
+I1219 16:09:35.544427 139713348335360 resnet_imagenet_main_arion.py:60] batch steps: 78.000000
+W1219 16:09:35.544925 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:35.545243 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:44.958178 139713348335360 resnet_imagenet_main_arion.py:84] global step:1, loss value: 6.991017
+W1219 16:09:44.958574 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:44.958957 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:45.556791 139713348335360 resnet_imagenet_main_arion.py:84] global step:2, loss value: 8296298708992.000000
+W1219 16:09:45.557013 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:45.557195 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:46.138032 139713348335360 resnet_imagenet_main_arion.py:84] global step:3, loss value: 35221.953125
+W1219 16:09:46.138245 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:46.138435 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:46.712987 139713348335360 resnet_imagenet_main_arion.py:84] global step:4, loss value: 234056560.000000
+W1219 16:09:46.713199 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:46.713369 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:47.298831 139713348335360 resnet_imagenet_main_arion.py:84] global step:5, loss value: 236705152.000000
+W1219 16:09:47.299054 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:47.299237 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:47.882738 139713348335360 resnet_imagenet_main_arion.py:84] global step:6, loss value: 180408.515625
+W1219 16:09:47.882964 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:47.883149 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:48.467144 139713348335360 resnet_imagenet_main_arion.py:84] global step:7, loss value: 154232.609375
+W1219 16:09:48.467394 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:48.467587 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:49.050981 139713348335360 resnet_imagenet_main_arion.py:84] global step:8, loss value: 192066.156250
+W1219 16:09:49.051212 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:49.051406 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:49.635205 139713348335360 resnet_imagenet_main_arion.py:84] global step:9, loss value: 126082.234375
+W1219 16:09:49.635446 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:49.635625 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:50.231908 139713348335360 resnet_imagenet_main_arion.py:84] global step:10, loss value: 42822.046875
+W1219 16:09:50.232144 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:50.232314 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:50.812520 139713348335360 resnet_imagenet_main_arion.py:84] global step:11, loss value: 34771904.000000
+W1219 16:09:50.812745 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:50.812932 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:51.400615 139713348335360 resnet_imagenet_main_arion.py:84] global step:12, loss value: 723302.875000
+W1219 16:09:51.400842 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:51.401044 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:51.986114 139713348335360 resnet_imagenet_main_arion.py:84] global step:13, loss value: 34601.082031
+W1219 16:09:51.986340 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:51.986527 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:52.572739 139713348335360 resnet_imagenet_main_arion.py:84] global step:14, loss value: 529195.000000
+W1219 16:09:52.572952 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:52.573125 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:53.151883 139713348335360 resnet_imagenet_main_arion.py:84] global step:15, loss value: 111542.359375
+W1219 16:09:53.152111 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:53.152295 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:53.734667 139713348335360 resnet_imagenet_main_arion.py:84] global step:16, loss value: 1581959.250000
+W1219 16:09:53.734890 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:53.735071 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:54.317238 139713348335360 resnet_imagenet_main_arion.py:84] global step:17, loss value: 187661.812500
+W1219 16:09:54.317458 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:54.317636 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:54.900170 139713348335360 resnet_imagenet_main_arion.py:84] global step:18, loss value: 5244734.000000
+W1219 16:09:54.900394 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:54.900576 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:55.478114 139713348335360 resnet_imagenet_main_arion.py:84] global step:19, loss value: 150208.125000
+W1219 16:09:55.478350 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:55.479034 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:56.064162 139713348335360 resnet_imagenet_main_arion.py:84] global step:20, loss value: 437769.656250
+W1219 16:09:56.064368 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:56.064548 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:56.647130 139713348335360 resnet_imagenet_main_arion.py:84] global step:21, loss value: 375056.156250
+W1219 16:09:56.647345 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:56.647540 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:57.232325 139713348335360 resnet_imagenet_main_arion.py:84] global step:22, loss value: 341127.500000
+W1219 16:09:57.232546 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:57.232715 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:57.818992 139713348335360 resnet_imagenet_main_arion.py:84] global step:23, loss value: 325852.062500
+W1219 16:09:57.819201 139713348335360 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1219 16:09:57.819388 139713348335360 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1219 16:09:58.410666 139713348335360 coordinator.py:62] Joining workers...
+I1219 16:09:58.410833 139713348335360 cluster.py:173] Terminating cluster...

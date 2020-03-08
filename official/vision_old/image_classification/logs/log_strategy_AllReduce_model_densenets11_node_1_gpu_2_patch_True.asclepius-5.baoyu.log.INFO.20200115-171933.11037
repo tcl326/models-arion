@@ -1,0 +1,3709 @@
+I0115 17:19:33.429144 140441855682304 cluster.py:45] ClusterSpec: {'worker': ['localhost:15000']}
+W0115 17:19:34.105965 140441855682304 deprecation.py:323] From /storage/baoyu/arion/env/lib/python3.6/site-packages/tensorflow_core/python/ops/image_ops_impl.py:2487: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W0115 17:19:34.331846 140441855682304 deprecation.py:506] From /storage/baoyu/arion/env/lib/python3.6/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1630: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+I0115 17:19:37.320329 140441855682304 graph_item.py:48] Patched optimizer: Adam 
+with args: (<tensorflow.python.keras.optimizer_v2.adam.Adam object at 0x7fba808c3eb8>,) 
+kwargs: {'learning_rate': 0.1, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-08}
+I0115 17:19:39.315653 140441855682304 graph_item.py:64] Registered grads: 
+ [<tf.Tensor 'Adam/gradients/gradients/densenet/conv1/conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 7, 3, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv1/bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv1/bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block1_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block1_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block1_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 64, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block1_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block1_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block1_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block2_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(96,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block2_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(96,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block2_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 96, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block2_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block2_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block2_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block3_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block3_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block3_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 128, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block3_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block3_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv2_block3_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/pool2_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/pool2_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/pool2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 160, 80) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block1_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(80,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block1_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(80,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block1_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 80, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block1_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block1_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block1_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block2_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(112,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block2_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(112,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block2_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 112, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block2_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block2_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block2_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block3_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(144,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block3_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(144,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block3_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 144, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block3_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block3_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block3_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block4_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(176,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block4_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(176,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block4_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 176, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block4_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block4_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block4_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block5_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(208,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block5_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(208,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block5_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 208, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block5_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block5_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block5_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block6_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(240,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block6_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(240,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block6_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 240, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block6_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block6_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv3_block6_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/pool3_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(272,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/pool3_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(272,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/pool3_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 272, 136) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block1_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(136,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block1_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(136,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block1_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 136, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block1_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block1_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block1_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block2_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(168,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block2_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(168,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block2_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 168, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block2_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block2_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block2_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block3_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(200,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block3_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(200,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block3_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 200, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block3_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block3_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block3_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block4_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(232,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block4_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(232,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block4_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 232, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block4_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block4_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block4_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block5_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(264,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block5_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(264,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block5_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 264, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block5_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block5_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block5_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block6_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(296,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block6_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(296,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block6_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 296, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block6_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block6_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block6_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block7_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(328,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block7_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(328,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block7_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 328, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block7_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block7_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block7_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block8_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(360,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block8_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(360,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block8_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 360, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block8_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block8_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv4_block8_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/pool4_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(392,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/pool4_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(392,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/pool4_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 392, 196) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block1_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(196,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block1_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(196,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block1_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 196, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block1_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block1_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block1_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block2_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(228,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block2_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(228,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block2_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 228, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block2_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block2_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block2_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block3_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(260,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block3_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(260,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block3_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 260, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block3_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block3_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block3_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block4_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(292,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block4_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(292,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block4_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 292, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block4_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block4_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block4_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block5_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(324,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block5_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(324,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block5_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 324, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block5_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block5_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block5_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block6_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(356,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block6_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(356,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block6_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 356, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block6_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block6_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block6_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block7_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(388,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block7_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(388,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block7_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 388, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block7_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block7_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block7_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block8_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(420,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block8_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(420,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block8_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 420, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block8_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block8_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block8_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block9_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(452,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block9_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(452,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block9_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 452, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block9_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block9_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block9_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block10_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(484,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block10_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(484,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block10_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 484, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block10_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block10_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block10_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block11_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(516,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block11_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(516,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block11_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 516, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block11_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block11_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block11_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block12_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(548,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block12_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(548,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block12_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 548, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block12_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block12_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block12_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block13_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(580,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block13_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(580,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block13_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 580, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block13_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block13_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block13_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block14_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(612,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block14_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(612,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block14_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 612, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block14_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block14_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block14_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block15_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(644,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block15_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(644,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block15_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 644, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block15_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block15_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block15_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block16_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(676,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block16_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(676,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block16_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 676, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block16_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block16_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block16_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block17_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(708,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block17_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(708,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block17_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 708, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block17_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block17_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block17_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block18_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(740,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block18_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(740,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block18_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 740, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block18_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block18_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block18_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block19_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(772,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block19_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(772,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block19_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 772, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block19_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block19_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block19_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block20_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(804,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block20_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(804,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block20_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 804, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block20_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block20_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block20_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block21_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(836,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block21_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(836,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block21_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 836, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block21_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block21_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block21_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block22_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(868,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block22_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(868,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block22_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 868, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block22_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block22_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block22_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block23_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(900,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block23_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(900,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block23_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 900, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block23_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block23_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block23_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block24_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(932,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block24_0_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(932,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block24_1_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 932, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block24_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block24_1_bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/conv5_block24_2_conv/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:1' shape=(964,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/bn/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(964,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/fc1000/MatMul_grad/MatMul_1:0' shape=(964, 1001) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/densenet/fc1000/BiasAdd_grad/BiasAddGrad:0' shape=(1001,) dtype=float32>] with targets: 
+ [<tf.Variable 'conv1/conv/kernel:0' shape=(7, 7, 3, 64) dtype=float32>, <tf.Variable 'conv1/bn/gamma:0' shape=(64,) dtype=float32>, <tf.Variable 'conv1/bn/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2_block1_0_bn/gamma:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2_block1_0_bn/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2_block1_1_conv/kernel:0' shape=(1, 1, 64, 128) dtype=float32>, <tf.Variable 'conv2_block1_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2_block1_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2_block1_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv2_block2_0_bn/gamma:0' shape=(96,) dtype=float32>, <tf.Variable 'conv2_block2_0_bn/beta:0' shape=(96,) dtype=float32>, <tf.Variable 'conv2_block2_1_conv/kernel:0' shape=(1, 1, 96, 128) dtype=float32>, <tf.Variable 'conv2_block2_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2_block2_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2_block2_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv2_block3_0_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2_block3_0_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2_block3_1_conv/kernel:0' shape=(1, 1, 128, 128) dtype=float32>, <tf.Variable 'conv2_block3_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2_block3_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2_block3_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'pool2_bn/gamma:0' shape=(160,) dtype=float32>, <tf.Variable 'pool2_bn/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'pool2_conv/kernel:0' shape=(1, 1, 160, 80) dtype=float32>, <tf.Variable 'conv3_block1_0_bn/gamma:0' shape=(80,) dtype=float32>, <tf.Variable 'conv3_block1_0_bn/beta:0' shape=(80,) dtype=float32>, <tf.Variable 'conv3_block1_1_conv/kernel:0' shape=(1, 1, 80, 128) dtype=float32>, <tf.Variable 'conv3_block1_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block1_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block1_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv3_block2_0_bn/gamma:0' shape=(112,) dtype=float32>, <tf.Variable 'conv3_block2_0_bn/beta:0' shape=(112,) dtype=float32>, <tf.Variable 'conv3_block2_1_conv/kernel:0' shape=(1, 1, 112, 128) dtype=float32>, <tf.Variable 'conv3_block2_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block2_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block2_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv3_block3_0_bn/gamma:0' shape=(144,) dtype=float32>, <tf.Variable 'conv3_block3_0_bn/beta:0' shape=(144,) dtype=float32>, <tf.Variable 'conv3_block3_1_conv/kernel:0' shape=(1, 1, 144, 128) dtype=float32>, <tf.Variable 'conv3_block3_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block3_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block3_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv3_block4_0_bn/gamma:0' shape=(176,) dtype=float32>, <tf.Variable 'conv3_block4_0_bn/beta:0' shape=(176,) dtype=float32>, <tf.Variable 'conv3_block4_1_conv/kernel:0' shape=(1, 1, 176, 128) dtype=float32>, <tf.Variable 'conv3_block4_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block4_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block4_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv3_block5_0_bn/gamma:0' shape=(208,) dtype=float32>, <tf.Variable 'conv3_block5_0_bn/beta:0' shape=(208,) dtype=float32>, <tf.Variable 'conv3_block5_1_conv/kernel:0' shape=(1, 1, 208, 128) dtype=float32>, <tf.Variable 'conv3_block5_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block5_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block5_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv3_block6_0_bn/gamma:0' shape=(240,) dtype=float32>, <tf.Variable 'conv3_block6_0_bn/beta:0' shape=(240,) dtype=float32>, <tf.Variable 'conv3_block6_1_conv/kernel:0' shape=(1, 1, 240, 128) dtype=float32>, <tf.Variable 'conv3_block6_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block6_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv3_block6_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'pool3_bn/gamma:0' shape=(272,) dtype=float32>, <tf.Variable 'pool3_bn/beta:0' shape=(272,) dtype=float32>, <tf.Variable 'pool3_conv/kernel:0' shape=(1, 1, 272, 136) dtype=float32>, <tf.Variable 'conv4_block1_0_bn/gamma:0' shape=(136,) dtype=float32>, <tf.Variable 'conv4_block1_0_bn/beta:0' shape=(136,) dtype=float32>, <tf.Variable 'conv4_block1_1_conv/kernel:0' shape=(1, 1, 136, 128) dtype=float32>, <tf.Variable 'conv4_block1_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block1_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block1_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv4_block2_0_bn/gamma:0' shape=(168,) dtype=float32>, <tf.Variable 'conv4_block2_0_bn/beta:0' shape=(168,) dtype=float32>, <tf.Variable 'conv4_block2_1_conv/kernel:0' shape=(1, 1, 168, 128) dtype=float32>, <tf.Variable 'conv4_block2_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block2_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block2_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv4_block3_0_bn/gamma:0' shape=(200,) dtype=float32>, <tf.Variable 'conv4_block3_0_bn/beta:0' shape=(200,) dtype=float32>, <tf.Variable 'conv4_block3_1_conv/kernel:0' shape=(1, 1, 200, 128) dtype=float32>, <tf.Variable 'conv4_block3_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block3_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block3_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv4_block4_0_bn/gamma:0' shape=(232,) dtype=float32>, <tf.Variable 'conv4_block4_0_bn/beta:0' shape=(232,) dtype=float32>, <tf.Variable 'conv4_block4_1_conv/kernel:0' shape=(1, 1, 232, 128) dtype=float32>, <tf.Variable 'conv4_block4_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block4_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block4_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv4_block5_0_bn/gamma:0' shape=(264,) dtype=float32>, <tf.Variable 'conv4_block5_0_bn/beta:0' shape=(264,) dtype=float32>, <tf.Variable 'conv4_block5_1_conv/kernel:0' shape=(1, 1, 264, 128) dtype=float32>, <tf.Variable 'conv4_block5_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block5_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block5_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv4_block6_0_bn/gamma:0' shape=(296,) dtype=float32>, <tf.Variable 'conv4_block6_0_bn/beta:0' shape=(296,) dtype=float32>, <tf.Variable 'conv4_block6_1_conv/kernel:0' shape=(1, 1, 296, 128) dtype=float32>, <tf.Variable 'conv4_block6_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block6_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block6_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv4_block7_0_bn/gamma:0' shape=(328,) dtype=float32>, <tf.Variable 'conv4_block7_0_bn/beta:0' shape=(328,) dtype=float32>, <tf.Variable 'conv4_block7_1_conv/kernel:0' shape=(1, 1, 328, 128) dtype=float32>, <tf.Variable 'conv4_block7_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block7_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block7_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv4_block8_0_bn/gamma:0' shape=(360,) dtype=float32>, <tf.Variable 'conv4_block8_0_bn/beta:0' shape=(360,) dtype=float32>, <tf.Variable 'conv4_block8_1_conv/kernel:0' shape=(1, 1, 360, 128) dtype=float32>, <tf.Variable 'conv4_block8_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block8_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv4_block8_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'pool4_bn/gamma:0' shape=(392,) dtype=float32>, <tf.Variable 'pool4_bn/beta:0' shape=(392,) dtype=float32>, <tf.Variable 'pool4_conv/kernel:0' shape=(1, 1, 392, 196) dtype=float32>, <tf.Variable 'conv5_block1_0_bn/gamma:0' shape=(196,) dtype=float32>, <tf.Variable 'conv5_block1_0_bn/beta:0' shape=(196,) dtype=float32>, <tf.Variable 'conv5_block1_1_conv/kernel:0' shape=(1, 1, 196, 128) dtype=float32>, <tf.Variable 'conv5_block1_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block1_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block1_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block2_0_bn/gamma:0' shape=(228,) dtype=float32>, <tf.Variable 'conv5_block2_0_bn/beta:0' shape=(228,) dtype=float32>, <tf.Variable 'conv5_block2_1_conv/kernel:0' shape=(1, 1, 228, 128) dtype=float32>, <tf.Variable 'conv5_block2_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block2_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block2_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block3_0_bn/gamma:0' shape=(260,) dtype=float32>, <tf.Variable 'conv5_block3_0_bn/beta:0' shape=(260,) dtype=float32>, <tf.Variable 'conv5_block3_1_conv/kernel:0' shape=(1, 1, 260, 128) dtype=float32>, <tf.Variable 'conv5_block3_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block3_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block3_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block4_0_bn/gamma:0' shape=(292,) dtype=float32>, <tf.Variable 'conv5_block4_0_bn/beta:0' shape=(292,) dtype=float32>, <tf.Variable 'conv5_block4_1_conv/kernel:0' shape=(1, 1, 292, 128) dtype=float32>, <tf.Variable 'conv5_block4_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block4_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block4_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block5_0_bn/gamma:0' shape=(324,) dtype=float32>, <tf.Variable 'conv5_block5_0_bn/beta:0' shape=(324,) dtype=float32>, <tf.Variable 'conv5_block5_1_conv/kernel:0' shape=(1, 1, 324, 128) dtype=float32>, <tf.Variable 'conv5_block5_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block5_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block5_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block6_0_bn/gamma:0' shape=(356,) dtype=float32>, <tf.Variable 'conv5_block6_0_bn/beta:0' shape=(356,) dtype=float32>, <tf.Variable 'conv5_block6_1_conv/kernel:0' shape=(1, 1, 356, 128) dtype=float32>, <tf.Variable 'conv5_block6_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block6_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block6_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block7_0_bn/gamma:0' shape=(388,) dtype=float32>, <tf.Variable 'conv5_block7_0_bn/beta:0' shape=(388,) dtype=float32>, <tf.Variable 'conv5_block7_1_conv/kernel:0' shape=(1, 1, 388, 128) dtype=float32>, <tf.Variable 'conv5_block7_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block7_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block7_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block8_0_bn/gamma:0' shape=(420,) dtype=float32>, <tf.Variable 'conv5_block8_0_bn/beta:0' shape=(420,) dtype=float32>, <tf.Variable 'conv5_block8_1_conv/kernel:0' shape=(1, 1, 420, 128) dtype=float32>, <tf.Variable 'conv5_block8_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block8_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block8_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block9_0_bn/gamma:0' shape=(452,) dtype=float32>, <tf.Variable 'conv5_block9_0_bn/beta:0' shape=(452,) dtype=float32>, <tf.Variable 'conv5_block9_1_conv/kernel:0' shape=(1, 1, 452, 128) dtype=float32>, <tf.Variable 'conv5_block9_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block9_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block9_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block10_0_bn/gamma:0' shape=(484,) dtype=float32>, <tf.Variable 'conv5_block10_0_bn/beta:0' shape=(484,) dtype=float32>, <tf.Variable 'conv5_block10_1_conv/kernel:0' shape=(1, 1, 484, 128) dtype=float32>, <tf.Variable 'conv5_block10_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block10_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block10_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block11_0_bn/gamma:0' shape=(516,) dtype=float32>, <tf.Variable 'conv5_block11_0_bn/beta:0' shape=(516,) dtype=float32>, <tf.Variable 'conv5_block11_1_conv/kernel:0' shape=(1, 1, 516, 128) dtype=float32>, <tf.Variable 'conv5_block11_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block11_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block11_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block12_0_bn/gamma:0' shape=(548,) dtype=float32>, <tf.Variable 'conv5_block12_0_bn/beta:0' shape=(548,) dtype=float32>, <tf.Variable 'conv5_block12_1_conv/kernel:0' shape=(1, 1, 548, 128) dtype=float32>, <tf.Variable 'conv5_block12_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block12_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block12_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block13_0_bn/gamma:0' shape=(580,) dtype=float32>, <tf.Variable 'conv5_block13_0_bn/beta:0' shape=(580,) dtype=float32>, <tf.Variable 'conv5_block13_1_conv/kernel:0' shape=(1, 1, 580, 128) dtype=float32>, <tf.Variable 'conv5_block13_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block13_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block13_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block14_0_bn/gamma:0' shape=(612,) dtype=float32>, <tf.Variable 'conv5_block14_0_bn/beta:0' shape=(612,) dtype=float32>, <tf.Variable 'conv5_block14_1_conv/kernel:0' shape=(1, 1, 612, 128) dtype=float32>, <tf.Variable 'conv5_block14_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block14_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block14_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block15_0_bn/gamma:0' shape=(644,) dtype=float32>, <tf.Variable 'conv5_block15_0_bn/beta:0' shape=(644,) dtype=float32>, <tf.Variable 'conv5_block15_1_conv/kernel:0' shape=(1, 1, 644, 128) dtype=float32>, <tf.Variable 'conv5_block15_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block15_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block15_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block16_0_bn/gamma:0' shape=(676,) dtype=float32>, <tf.Variable 'conv5_block16_0_bn/beta:0' shape=(676,) dtype=float32>, <tf.Variable 'conv5_block16_1_conv/kernel:0' shape=(1, 1, 676, 128) dtype=float32>, <tf.Variable 'conv5_block16_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block16_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block16_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block17_0_bn/gamma:0' shape=(708,) dtype=float32>, <tf.Variable 'conv5_block17_0_bn/beta:0' shape=(708,) dtype=float32>, <tf.Variable 'conv5_block17_1_conv/kernel:0' shape=(1, 1, 708, 128) dtype=float32>, <tf.Variable 'conv5_block17_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block17_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block17_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block18_0_bn/gamma:0' shape=(740,) dtype=float32>, <tf.Variable 'conv5_block18_0_bn/beta:0' shape=(740,) dtype=float32>, <tf.Variable 'conv5_block18_1_conv/kernel:0' shape=(1, 1, 740, 128) dtype=float32>, <tf.Variable 'conv5_block18_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block18_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block18_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block19_0_bn/gamma:0' shape=(772,) dtype=float32>, <tf.Variable 'conv5_block19_0_bn/beta:0' shape=(772,) dtype=float32>, <tf.Variable 'conv5_block19_1_conv/kernel:0' shape=(1, 1, 772, 128) dtype=float32>, <tf.Variable 'conv5_block19_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block19_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block19_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block20_0_bn/gamma:0' shape=(804,) dtype=float32>, <tf.Variable 'conv5_block20_0_bn/beta:0' shape=(804,) dtype=float32>, <tf.Variable 'conv5_block20_1_conv/kernel:0' shape=(1, 1, 804, 128) dtype=float32>, <tf.Variable 'conv5_block20_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block20_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block20_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block21_0_bn/gamma:0' shape=(836,) dtype=float32>, <tf.Variable 'conv5_block21_0_bn/beta:0' shape=(836,) dtype=float32>, <tf.Variable 'conv5_block21_1_conv/kernel:0' shape=(1, 1, 836, 128) dtype=float32>, <tf.Variable 'conv5_block21_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block21_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block21_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block22_0_bn/gamma:0' shape=(868,) dtype=float32>, <tf.Variable 'conv5_block22_0_bn/beta:0' shape=(868,) dtype=float32>, <tf.Variable 'conv5_block22_1_conv/kernel:0' shape=(1, 1, 868, 128) dtype=float32>, <tf.Variable 'conv5_block22_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block22_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block22_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block23_0_bn/gamma:0' shape=(900,) dtype=float32>, <tf.Variable 'conv5_block23_0_bn/beta:0' shape=(900,) dtype=float32>, <tf.Variable 'conv5_block23_1_conv/kernel:0' shape=(1, 1, 900, 128) dtype=float32>, <tf.Variable 'conv5_block23_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block23_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block23_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'conv5_block24_0_bn/gamma:0' shape=(932,) dtype=float32>, <tf.Variable 'conv5_block24_0_bn/beta:0' shape=(932,) dtype=float32>, <tf.Variable 'conv5_block24_1_conv/kernel:0' shape=(1, 1, 932, 128) dtype=float32>, <tf.Variable 'conv5_block24_1_bn/gamma:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block24_1_bn/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv5_block24_2_conv/kernel:0' shape=(3, 3, 128, 32) dtype=float32>, <tf.Variable 'bn/gamma:0' shape=(964,) dtype=float32>, <tf.Variable 'bn/beta:0' shape=(964,) dtype=float32>, <tf.Variable 'fc1000/kernel:0' shape=(964, 1001) dtype=float32>, <tf.Variable 'fc1000/bias:0' shape=(1001,) dtype=float32>]
+I0115 17:19:41.342254 140441855682304 arion.py:72] Raw strategy: id: "20200115T221941M318632"
+path: "/tmp/arion/strategies/20200115T221941M318632"
+node_config {
+  var_name: "conv1/conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv1/bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv1/bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool2_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool2_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool3_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool3_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool3_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool4_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool4_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool4_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "fc1000/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "fc1000/bias:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+graph_config {
+  replicas: "localhost:GPU:0"
+  replicas: "localhost:GPU:1"
+}
+
+I0115 17:19:41.344301 140441855682304 arion.py:76] Compiled strategy: id: "20200115T221941M318632"
+path: "/tmp/arion/strategies/20200115T221941M318632"
+node_config {
+  var_name: "conv1/conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv1/bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv1/bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block1_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block2_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv2_block3_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool2_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool2_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block1_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block2_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block3_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block4_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block5_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv3_block6_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool3_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool3_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool3_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block1_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block2_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block3_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block4_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block5_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block6_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block7_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv4_block8_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool4_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool4_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "pool4_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block1_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block2_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block3_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block4_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block5_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block6_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block7_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block8_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block9_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block10_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block11_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block12_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block13_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block14_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block15_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block16_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block17_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block18_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block19_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block20_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block21_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block22_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block23_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_0_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_0_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_1_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_1_bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_1_bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "conv5_block24_2_conv/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "bn/gamma:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "bn/beta:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "fc1000/kernel:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+node_config {
+  var_name: "fc1000/bias:0"
+  AllReduceSynchronizer {
+    compressor: PowerSGDCompressor
+    chunk_size: 128
+  }
+}
+graph_config {
+  replicas: "/job:worker/task:0/device:GPU:0"
+  replicas: "/job:worker/task:0/device:GPU:1"
+}
+
+I0115 17:19:42.441502 140441855682304 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/original
+I0115 17:19:44.887068 140441855682304 graph_transformer.py:105] Local replica devices: ['/job:worker/task:0/device:GPU:0', '/job:worker/task:0/device:GPU:1']
+I0115 17:19:44.888226 140441855682304 replicator.py:28] Local replica devices: ['/job:worker/task:0/device:GPU:0', '/job:worker/task:0/device:GPU:1']
+I0115 17:19:49.092286 140441855682304 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/replica0
+I0115 17:19:54.186648 140441855682304 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/replica1
+I0115 17:19:54.448095 140441855682304 replicator.py:44] Successfully replicated operations
+I0115 17:20:32.425057 140441855682304 graph_transformer.py:66] Successfully applied local in-graph replication
+I0115 17:20:34.466383 140441855682304 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/after-in-graph
+I0115 17:20:35.519698 140441855682304 graph_transformer.py:76] Successfully applied between-graph replication
+I0115 17:20:35.520075 140441855682304 graph_transformer.py:83] Successfully built transformed graph
+I0115 17:20:37.545423 140441855682304 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/transformed
+I0115 17:20:41.401895 140441855682304 densenet_imagenet_main_arion.py:61] batch steps: 78.000000
+W0115 17:20:41.488520 140441855682304 remapper.py:120] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W0115 17:20:41.497102 140441855682304 remapper.py:116] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas

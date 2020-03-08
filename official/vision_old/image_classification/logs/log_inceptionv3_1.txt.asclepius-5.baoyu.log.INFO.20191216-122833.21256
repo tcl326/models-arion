@@ -1,0 +1,3259 @@
+W1216 12:28:34.877294 139767239800576 deprecation.py:323] From /storage/baoyu/arion/env/lib/python3.6/site-packages/tensorflow_core/python/ops/image_ops_impl.py:2547: sample_distorted_bounding_box (from tensorflow.python.ops.image_ops_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+`seed2` arg is deprecated.Use sample_distorted_bounding_box_v2 instead.
+W1216 12:28:35.834856 139767239800576 deprecation.py:506] From /storage/baoyu/arion/env/lib/python3.6/site-packages/tensorflow_core/python/ops/resource_variable_ops.py:1637: calling BaseResourceVariable.__init__ (from tensorflow.python.ops.resource_variable_ops) with constraint is deprecated and will be removed in a future version.
+Instructions for updating:
+If using Keras pass *_constraint arguments to layers.
+I1216 12:28:40.184432 139767239800576 graph_item.py:53] Patched optimizer: Adam 
+with args: (<tensorflow.python.keras.optimizer_v2.adam.Adam object at 0x7f1d807a0630>,) 
+kwargs: {'learning_rate': 0.1, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-08}
+W1216 12:28:40.198555 139767239800576 network.py:847] Model was constructed with shape Tensor("input_1:0", shape=(None, 299, 299, 3), dtype=float32) for input (None, 299, 299, 3), but it was re-called on a Tensor with incompatible shape (None, 224, 224, 3).
+I1216 12:28:41.974284 139767239800576 graph_item.py:69] Registered grads: 
+ [<tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 3, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(32,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_1/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 32, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_1/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(32,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_2/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 32, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_2/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_3/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 64, 80) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_3/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(80,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_4/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 80, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_4/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_5/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 192, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_5/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_6/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 192, 48) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_6/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(48,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_7/Conv2D_grad/Conv2DBackpropFilter:0' shape=(5, 5, 48, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_7/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_8/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 192, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_8/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_9/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 64, 96) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_9/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(96,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_10/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 96, 96) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_10/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(96,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_11/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 192, 32) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_11/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(32,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_12/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 256, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_12/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_13/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 256, 48) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_13/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(48,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_14/Conv2D_grad/Conv2DBackpropFilter:0' shape=(5, 5, 48, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_14/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_15/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 256, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_15/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_16/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 64, 96) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_16/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(96,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_17/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 96, 96) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_17/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(96,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_18/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 256, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_18/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_19/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 288, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_19/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_20/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 288, 48) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_20/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(48,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_21/Conv2D_grad/Conv2DBackpropFilter:0' shape=(5, 5, 48, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_21/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_22/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 288, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_22/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_23/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 64, 96) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_23/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(96,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_24/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 96, 96) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_24/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(96,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_25/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 288, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_25/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_26/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 288, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_26/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_27/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 288, 64) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_27/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(64,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_28/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 64, 96) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_28/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(96,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_29/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 96, 96) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_29/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(96,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_30/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_30/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_31/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_31/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_32/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 128, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_32/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_33/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 128, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_33/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_34/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_34/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_35/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 128, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_35/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_36/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 128, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_36/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_37/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 128, 128) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_37/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(128,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_38/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 128, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_38/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_39/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_39/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_40/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_40/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_41/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_41/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_42/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 160, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_42/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_43/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 160, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_43/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_44/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_44/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_45/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 160, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_45/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_46/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 160, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_46/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_47/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 160, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_47/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_48/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 160, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_48/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_49/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_49/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_50/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_50/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_51/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_51/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_52/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 160, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_52/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_53/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 160, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_53/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_54/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_54/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_55/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 160, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_55/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_56/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 160, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_56/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_57/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 160, 160) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_57/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(160,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_58/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 160, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_58/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_59/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_59/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_60/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_60/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_61/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_61/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_62/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 192, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_62/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_63/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 192, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_63/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_64/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_64/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_65/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 192, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_65/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_66/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 192, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_66/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_67/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 192, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_67/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_68/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 192, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_68/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_69/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_69/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_70/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_70/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_71/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 192, 320) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_71/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(320,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_72/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_72/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_73/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 7, 192, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_73/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_74/Conv2D_grad/Conv2DBackpropFilter:0' shape=(7, 1, 192, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_74/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_75/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 192, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_75/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_76/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 1280, 320) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_76/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(320,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_77/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 1280, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_77/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_78/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 3, 384, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_78/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_79/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 1, 384, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_79/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_80/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 1280, 448) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_80/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(448,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_81/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 448, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_81/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_82/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 3, 384, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_82/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_83/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 1, 384, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_83/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_84/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 1280, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_84/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_85/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 2048, 320) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_85/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(320,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_86/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 2048, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_86/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_87/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 3, 384, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_87/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_88/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 1, 384, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_88/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_89/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 2048, 448) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_89/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(448,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_90/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 3, 448, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_90/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_91/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 3, 384, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_91/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_92/Conv2D_grad/Conv2DBackpropFilter:0' shape=(3, 1, 384, 384) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_92/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(384,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/conv2d_93/Conv2D_grad/Conv2DBackpropFilter:0' shape=(1, 1, 2048, 192) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/batch_normalization_93/FusedBatchNormV3_grad/FusedBatchNormGradV3:2' shape=(192,) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/predictions/MatMul_grad/MatMul_1:0' shape=(2048, 1001) dtype=float32>, <tf.Tensor 'Adam/gradients/gradients/inception_v3/predictions/BiasAdd_grad/BiasAddGrad:0' shape=(1001,) dtype=float32>] with targets: 
+ [<tf.Variable 'conv2d/kernel:0' shape=(3, 3, 3, 32) dtype=float32>, <tf.Variable 'batch_normalization/beta:0' shape=(32,) dtype=float32>, <tf.Variable 'conv2d_1/kernel:0' shape=(3, 3, 32, 32) dtype=float32>, <tf.Variable 'batch_normalization_1/beta:0' shape=(32,) dtype=float32>, <tf.Variable 'conv2d_2/kernel:0' shape=(3, 3, 32, 64) dtype=float32>, <tf.Variable 'batch_normalization_2/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_3/kernel:0' shape=(1, 1, 64, 80) dtype=float32>, <tf.Variable 'batch_normalization_3/beta:0' shape=(80,) dtype=float32>, <tf.Variable 'conv2d_4/kernel:0' shape=(3, 3, 80, 192) dtype=float32>, <tf.Variable 'batch_normalization_4/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_5/kernel:0' shape=(1, 1, 192, 64) dtype=float32>, <tf.Variable 'batch_normalization_5/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_6/kernel:0' shape=(1, 1, 192, 48) dtype=float32>, <tf.Variable 'batch_normalization_6/beta:0' shape=(48,) dtype=float32>, <tf.Variable 'conv2d_7/kernel:0' shape=(5, 5, 48, 64) dtype=float32>, <tf.Variable 'batch_normalization_7/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_8/kernel:0' shape=(1, 1, 192, 64) dtype=float32>, <tf.Variable 'batch_normalization_8/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_9/kernel:0' shape=(3, 3, 64, 96) dtype=float32>, <tf.Variable 'batch_normalization_9/beta:0' shape=(96,) dtype=float32>, <tf.Variable 'conv2d_10/kernel:0' shape=(3, 3, 96, 96) dtype=float32>, <tf.Variable 'batch_normalization_10/beta:0' shape=(96,) dtype=float32>, <tf.Variable 'conv2d_11/kernel:0' shape=(1, 1, 192, 32) dtype=float32>, <tf.Variable 'batch_normalization_11/beta:0' shape=(32,) dtype=float32>, <tf.Variable 'conv2d_12/kernel:0' shape=(1, 1, 256, 64) dtype=float32>, <tf.Variable 'batch_normalization_12/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_13/kernel:0' shape=(1, 1, 256, 48) dtype=float32>, <tf.Variable 'batch_normalization_13/beta:0' shape=(48,) dtype=float32>, <tf.Variable 'conv2d_14/kernel:0' shape=(5, 5, 48, 64) dtype=float32>, <tf.Variable 'batch_normalization_14/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_15/kernel:0' shape=(1, 1, 256, 64) dtype=float32>, <tf.Variable 'batch_normalization_15/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_16/kernel:0' shape=(3, 3, 64, 96) dtype=float32>, <tf.Variable 'batch_normalization_16/beta:0' shape=(96,) dtype=float32>, <tf.Variable 'conv2d_17/kernel:0' shape=(3, 3, 96, 96) dtype=float32>, <tf.Variable 'batch_normalization_17/beta:0' shape=(96,) dtype=float32>, <tf.Variable 'conv2d_18/kernel:0' shape=(1, 1, 256, 64) dtype=float32>, <tf.Variable 'batch_normalization_18/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_19/kernel:0' shape=(1, 1, 288, 64) dtype=float32>, <tf.Variable 'batch_normalization_19/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_20/kernel:0' shape=(1, 1, 288, 48) dtype=float32>, <tf.Variable 'batch_normalization_20/beta:0' shape=(48,) dtype=float32>, <tf.Variable 'conv2d_21/kernel:0' shape=(5, 5, 48, 64) dtype=float32>, <tf.Variable 'batch_normalization_21/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_22/kernel:0' shape=(1, 1, 288, 64) dtype=float32>, <tf.Variable 'batch_normalization_22/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_23/kernel:0' shape=(3, 3, 64, 96) dtype=float32>, <tf.Variable 'batch_normalization_23/beta:0' shape=(96,) dtype=float32>, <tf.Variable 'conv2d_24/kernel:0' shape=(3, 3, 96, 96) dtype=float32>, <tf.Variable 'batch_normalization_24/beta:0' shape=(96,) dtype=float32>, <tf.Variable 'conv2d_25/kernel:0' shape=(1, 1, 288, 64) dtype=float32>, <tf.Variable 'batch_normalization_25/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_26/kernel:0' shape=(3, 3, 288, 384) dtype=float32>, <tf.Variable 'batch_normalization_26/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_27/kernel:0' shape=(1, 1, 288, 64) dtype=float32>, <tf.Variable 'batch_normalization_27/beta:0' shape=(64,) dtype=float32>, <tf.Variable 'conv2d_28/kernel:0' shape=(3, 3, 64, 96) dtype=float32>, <tf.Variable 'batch_normalization_28/beta:0' shape=(96,) dtype=float32>, <tf.Variable 'conv2d_29/kernel:0' shape=(3, 3, 96, 96) dtype=float32>, <tf.Variable 'batch_normalization_29/beta:0' shape=(96,) dtype=float32>, <tf.Variable 'conv2d_30/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_30/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_31/kernel:0' shape=(1, 1, 768, 128) dtype=float32>, <tf.Variable 'batch_normalization_31/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2d_32/kernel:0' shape=(1, 7, 128, 128) dtype=float32>, <tf.Variable 'batch_normalization_32/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2d_33/kernel:0' shape=(7, 1, 128, 192) dtype=float32>, <tf.Variable 'batch_normalization_33/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_34/kernel:0' shape=(1, 1, 768, 128) dtype=float32>, <tf.Variable 'batch_normalization_34/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2d_35/kernel:0' shape=(7, 1, 128, 128) dtype=float32>, <tf.Variable 'batch_normalization_35/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2d_36/kernel:0' shape=(1, 7, 128, 128) dtype=float32>, <tf.Variable 'batch_normalization_36/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2d_37/kernel:0' shape=(7, 1, 128, 128) dtype=float32>, <tf.Variable 'batch_normalization_37/beta:0' shape=(128,) dtype=float32>, <tf.Variable 'conv2d_38/kernel:0' shape=(1, 7, 128, 192) dtype=float32>, <tf.Variable 'batch_normalization_38/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_39/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_39/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_40/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_40/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_41/kernel:0' shape=(1, 1, 768, 160) dtype=float32>, <tf.Variable 'batch_normalization_41/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_42/kernel:0' shape=(1, 7, 160, 160) dtype=float32>, <tf.Variable 'batch_normalization_42/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_43/kernel:0' shape=(7, 1, 160, 192) dtype=float32>, <tf.Variable 'batch_normalization_43/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_44/kernel:0' shape=(1, 1, 768, 160) dtype=float32>, <tf.Variable 'batch_normalization_44/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_45/kernel:0' shape=(7, 1, 160, 160) dtype=float32>, <tf.Variable 'batch_normalization_45/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_46/kernel:0' shape=(1, 7, 160, 160) dtype=float32>, <tf.Variable 'batch_normalization_46/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_47/kernel:0' shape=(7, 1, 160, 160) dtype=float32>, <tf.Variable 'batch_normalization_47/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_48/kernel:0' shape=(1, 7, 160, 192) dtype=float32>, <tf.Variable 'batch_normalization_48/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_49/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_49/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_50/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_50/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_51/kernel:0' shape=(1, 1, 768, 160) dtype=float32>, <tf.Variable 'batch_normalization_51/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_52/kernel:0' shape=(1, 7, 160, 160) dtype=float32>, <tf.Variable 'batch_normalization_52/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_53/kernel:0' shape=(7, 1, 160, 192) dtype=float32>, <tf.Variable 'batch_normalization_53/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_54/kernel:0' shape=(1, 1, 768, 160) dtype=float32>, <tf.Variable 'batch_normalization_54/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_55/kernel:0' shape=(7, 1, 160, 160) dtype=float32>, <tf.Variable 'batch_normalization_55/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_56/kernel:0' shape=(1, 7, 160, 160) dtype=float32>, <tf.Variable 'batch_normalization_56/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_57/kernel:0' shape=(7, 1, 160, 160) dtype=float32>, <tf.Variable 'batch_normalization_57/beta:0' shape=(160,) dtype=float32>, <tf.Variable 'conv2d_58/kernel:0' shape=(1, 7, 160, 192) dtype=float32>, <tf.Variable 'batch_normalization_58/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_59/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_59/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_60/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_60/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_61/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_61/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_62/kernel:0' shape=(1, 7, 192, 192) dtype=float32>, <tf.Variable 'batch_normalization_62/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_63/kernel:0' shape=(7, 1, 192, 192) dtype=float32>, <tf.Variable 'batch_normalization_63/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_64/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_64/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_65/kernel:0' shape=(7, 1, 192, 192) dtype=float32>, <tf.Variable 'batch_normalization_65/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_66/kernel:0' shape=(1, 7, 192, 192) dtype=float32>, <tf.Variable 'batch_normalization_66/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_67/kernel:0' shape=(7, 1, 192, 192) dtype=float32>, <tf.Variable 'batch_normalization_67/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_68/kernel:0' shape=(1, 7, 192, 192) dtype=float32>, <tf.Variable 'batch_normalization_68/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_69/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_69/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_70/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_70/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_71/kernel:0' shape=(3, 3, 192, 320) dtype=float32>, <tf.Variable 'batch_normalization_71/beta:0' shape=(320,) dtype=float32>, <tf.Variable 'conv2d_72/kernel:0' shape=(1, 1, 768, 192) dtype=float32>, <tf.Variable 'batch_normalization_72/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_73/kernel:0' shape=(1, 7, 192, 192) dtype=float32>, <tf.Variable 'batch_normalization_73/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_74/kernel:0' shape=(7, 1, 192, 192) dtype=float32>, <tf.Variable 'batch_normalization_74/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_75/kernel:0' shape=(3, 3, 192, 192) dtype=float32>, <tf.Variable 'batch_normalization_75/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_76/kernel:0' shape=(1, 1, 1280, 320) dtype=float32>, <tf.Variable 'batch_normalization_76/beta:0' shape=(320,) dtype=float32>, <tf.Variable 'conv2d_77/kernel:0' shape=(1, 1, 1280, 384) dtype=float32>, <tf.Variable 'batch_normalization_77/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_78/kernel:0' shape=(1, 3, 384, 384) dtype=float32>, <tf.Variable 'batch_normalization_78/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_79/kernel:0' shape=(3, 1, 384, 384) dtype=float32>, <tf.Variable 'batch_normalization_79/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_80/kernel:0' shape=(1, 1, 1280, 448) dtype=float32>, <tf.Variable 'batch_normalization_80/beta:0' shape=(448,) dtype=float32>, <tf.Variable 'conv2d_81/kernel:0' shape=(3, 3, 448, 384) dtype=float32>, <tf.Variable 'batch_normalization_81/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_82/kernel:0' shape=(1, 3, 384, 384) dtype=float32>, <tf.Variable 'batch_normalization_82/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_83/kernel:0' shape=(3, 1, 384, 384) dtype=float32>, <tf.Variable 'batch_normalization_83/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_84/kernel:0' shape=(1, 1, 1280, 192) dtype=float32>, <tf.Variable 'batch_normalization_84/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'conv2d_85/kernel:0' shape=(1, 1, 2048, 320) dtype=float32>, <tf.Variable 'batch_normalization_85/beta:0' shape=(320,) dtype=float32>, <tf.Variable 'conv2d_86/kernel:0' shape=(1, 1, 2048, 384) dtype=float32>, <tf.Variable 'batch_normalization_86/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_87/kernel:0' shape=(1, 3, 384, 384) dtype=float32>, <tf.Variable 'batch_normalization_87/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_88/kernel:0' shape=(3, 1, 384, 384) dtype=float32>, <tf.Variable 'batch_normalization_88/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_89/kernel:0' shape=(1, 1, 2048, 448) dtype=float32>, <tf.Variable 'batch_normalization_89/beta:0' shape=(448,) dtype=float32>, <tf.Variable 'conv2d_90/kernel:0' shape=(3, 3, 448, 384) dtype=float32>, <tf.Variable 'batch_normalization_90/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_91/kernel:0' shape=(1, 3, 384, 384) dtype=float32>, <tf.Variable 'batch_normalization_91/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_92/kernel:0' shape=(3, 1, 384, 384) dtype=float32>, <tf.Variable 'batch_normalization_92/beta:0' shape=(384,) dtype=float32>, <tf.Variable 'conv2d_93/kernel:0' shape=(1, 1, 2048, 192) dtype=float32>, <tf.Variable 'batch_normalization_93/beta:0' shape=(192,) dtype=float32>, <tf.Variable 'predictions/kernel:0' shape=(2048, 1001) dtype=float32>, <tf.Variable 'predictions/bias:0' shape=(1001,) dtype=float32>]
+I1216 12:28:43.268263 139767239800576 graph_transformer.py:25] Raw strategy: id: "20191216T172843M251498"
+path: "/tmp/arion/strategies/20191216T172843M251498"
+node_config {
+  var_name: "conv2d/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_1/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_2/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_3/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_4/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_4/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_5/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_5/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_6/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_6/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_7/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_7/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_8/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_8/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_9/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_9/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_10/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_10/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_11/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_11/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_12/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_12/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_13/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_13/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_14/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_14/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_15/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_15/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_16/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_16/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_17/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_17/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_18/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_18/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_19/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_19/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_20/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_20/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_21/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_21/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_22/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_22/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_23/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_23/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_24/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_24/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_25/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_25/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_26/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_26/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_27/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_27/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_28/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_28/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_29/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_29/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_30/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_30/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_31/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_31/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_32/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_32/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_33/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_33/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_34/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_34/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_35/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_35/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_36/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_36/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_37/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_37/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_38/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_38/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_39/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_39/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_40/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_40/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_41/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_41/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_42/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_42/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_43/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_43/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_44/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_44/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_45/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_45/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_46/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_46/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_47/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_47/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_48/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_48/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_49/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_49/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_50/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_50/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_51/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_51/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_52/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_52/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_53/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_53/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_54/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_54/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_55/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_55/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_56/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_56/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_57/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_57/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_58/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_58/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_59/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_59/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_60/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_60/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_61/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_61/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_62/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_62/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_63/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_63/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_64/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_64/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_65/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_65/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_66/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_66/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_67/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_67/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_68/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_68/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_69/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_69/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_70/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_70/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_71/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_71/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_72/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_72/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_73/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_73/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_74/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_74/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_75/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_75/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_76/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_76/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_77/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_77/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_78/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_78/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_79/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_79/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_80/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_80/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_81/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_81/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_82/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_82/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_83/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_83/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_84/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_84/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_85/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_85/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_86/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_86/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_87/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_87/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_88/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_88/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_89/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_89/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_90/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_90/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_91/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_91/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_92/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_92/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_93/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_93/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "localhost:CPU:0"
+    sync: true
+  }
+}
+graph_config {
+  replicas: "localhost:GPU:0"
+  replicas: "localhost:GPU:1"
+}
+
+I1216 12:28:43.272020 139767239800576 graph_transformer.py:29] Compiled strategy: id: "20191216T172843M251498"
+path: "/tmp/arion/strategies/20191216T172843M251498"
+node_config {
+  var_name: "conv2d/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_1/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_1/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_2/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_2/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_3/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_3/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_4/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_4/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_5/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_5/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_6/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_6/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_7/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_7/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_8/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_8/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_9/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_9/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_10/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_10/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_11/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_11/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_12/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_12/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_13/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_13/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_14/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_14/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_15/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_15/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_16/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_16/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_17/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_17/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_18/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_18/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_19/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_19/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_20/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_20/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_21/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_21/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_22/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_22/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_23/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_23/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_24/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_24/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_25/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_25/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_26/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_26/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_27/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_27/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_28/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_28/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_29/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_29/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_30/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_30/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_31/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_31/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_32/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_32/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_33/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_33/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_34/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_34/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_35/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_35/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_36/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_36/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_37/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_37/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_38/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_38/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_39/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_39/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_40/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_40/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_41/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_41/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_42/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_42/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_43/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_43/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_44/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_44/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_45/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_45/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_46/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_46/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_47/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_47/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_48/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_48/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_49/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_49/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_50/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_50/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_51/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_51/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_52/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_52/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_53/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_53/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_54/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_54/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_55/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_55/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_56/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_56/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_57/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_57/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_58/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_58/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_59/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_59/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_60/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_60/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_61/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_61/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_62/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_62/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_63/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_63/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_64/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_64/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_65/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_65/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_66/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_66/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_67/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_67/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_68/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_68/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_69/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_69/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_70/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_70/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_71/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_71/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_72/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_72/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_73/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_73/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_74/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_74/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_75/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_75/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_76/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_76/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_77/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_77/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_78/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_78/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_79/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_79/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_80/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_80/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_81/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_81/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_82/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_82/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_83/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_83/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_84/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_84/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_85/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_85/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_86/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_86/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_87/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_87/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_88/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_88/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_89/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_89/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_90/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_90/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_91/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_91/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_92/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_92/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "conv2d_93/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "batch_normalization_93/beta:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/kernel:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+node_config {
+  var_name: "predictions/bias:0"
+  PSSynchronizer {
+    reduction_destinations: "/job:worker/task:0/device:CPU:0"
+    sync: true
+  }
+}
+graph_config {
+  replicas: "/job:worker/task:0/device:GPU:0"
+  replicas: "/job:worker/task:0/device:GPU:1"
+}
+
+I1216 12:28:44.581013 139767239800576 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/original
+I1216 12:28:50.119328 139767239800576 replicator.py:29] Local replica devices: ['/job:worker/task:0/device:GPU:0', '/job:worker/task:0/device:GPU:1']
+I1216 12:28:56.291373 139767239800576 replicator.py:56] Successfully replicated operations
+I1216 12:29:29.713150 139767239800576 replicator.py:60] Successfully applied local in-graph replication
+I1216 12:29:31.993061 139767239800576 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/after-in-graph
+I1216 12:29:52.217597 139767239800576 replicator.py:65] Successfully applied between-graph replication
+I1216 12:29:52.217979 139767239800576 graph_transformer.py:67] Successfully built transformed graph
+I1216 12:29:54.279000 139767239800576 visualization_util.py:22] Graph summary written to: /tmp/arion/graphs/transformed
+I1216 12:30:04.168836 139767239800576 resnet_imagenet_main_arion.py:321] batch steps: 78.000000
+W1216 12:30:04.169243 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:30:04.169456 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:16.055824 139767239800576 resnet_imagenet_main_arion.py:71] global step:1, loss value: 7.170193
+W1216 12:31:16.088653 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:16.089058 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:16.272429 139767239800576 resnet_imagenet_main_arion.py:71] global step:2, loss value: 75.887169
+W1216 12:31:16.272637 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:16.272807 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:16.447617 139767239800576 resnet_imagenet_main_arion.py:71] global step:3, loss value: 46.039116
+W1216 12:31:16.447824 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:16.448019 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:16.615556 139767239800576 resnet_imagenet_main_arion.py:71] global step:4, loss value: 45.191402
+W1216 12:31:16.615763 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:16.615933 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:16.796667 139767239800576 resnet_imagenet_main_arion.py:71] global step:5, loss value: 37.186012
+W1216 12:31:16.796877 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:16.797049 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:16.977584 139767239800576 resnet_imagenet_main_arion.py:71] global step:6, loss value: 24.063519
+W1216 12:31:16.977848 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:16.978057 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:17.140607 139767239800576 resnet_imagenet_main_arion.py:71] global step:7, loss value: 18.726473
+W1216 12:31:17.140816 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:17.140998 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:17.318696 139767239800576 resnet_imagenet_main_arion.py:71] global step:8, loss value: 13.020133
+W1216 12:31:17.318899 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:17.319068 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:17.503757 139767239800576 resnet_imagenet_main_arion.py:71] global step:9, loss value: 12.944101
+W1216 12:31:17.504048 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:17.504320 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:17.673595 139767239800576 resnet_imagenet_main_arion.py:71] global step:10, loss value: 10.510907
+W1216 12:31:17.673861 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:17.674117 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:17.865565 139767239800576 resnet_imagenet_main_arion.py:71] global step:11, loss value: 7.747214
+W1216 12:31:17.865859 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:17.866153 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:18.053317 139767239800576 resnet_imagenet_main_arion.py:71] global step:12, loss value: 8.731997
+W1216 12:31:18.053526 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:18.053718 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:18.247153 139767239800576 resnet_imagenet_main_arion.py:71] global step:13, loss value: 8.753265
+W1216 12:31:18.247363 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:18.247541 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:18.428481 139767239800576 resnet_imagenet_main_arion.py:71] global step:14, loss value: 8.584099
+W1216 12:31:18.428763 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:18.430338 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:18.600131 139767239800576 resnet_imagenet_main_arion.py:71] global step:15, loss value: 8.264063
+W1216 12:31:18.600339 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:18.600508 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:18.786792 139767239800576 resnet_imagenet_main_arion.py:71] global step:16, loss value: 7.159892
+W1216 12:31:18.787079 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:18.787357 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:18.971086 139767239800576 resnet_imagenet_main_arion.py:71] global step:17, loss value: 8.052378
+W1216 12:31:18.971415 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:18.971763 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:19.156176 139767239800576 resnet_imagenet_main_arion.py:71] global step:18, loss value: 7.951758
+W1216 12:31:19.156386 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:19.156554 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:19.330417 139767239800576 resnet_imagenet_main_arion.py:71] global step:19, loss value: 8.079204
+W1216 12:31:19.330622 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:19.330801 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:19.501392 139767239800576 resnet_imagenet_main_arion.py:71] global step:20, loss value: 6.929911
+W1216 12:31:19.501653 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:19.501902 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:19.683534 139767239800576 resnet_imagenet_main_arion.py:71] global step:21, loss value: 7.942957
+W1216 12:31:19.683746 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:19.683917 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:19.850800 139767239800576 resnet_imagenet_main_arion.py:71] global step:22, loss value: 7.972834
+W1216 12:31:19.851025 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:19.851207 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:20.034022 139767239800576 resnet_imagenet_main_arion.py:71] global step:23, loss value: 7.592817
+W1216 12:31:20.034297 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:20.034557 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:20.194108 139767239800576 resnet_imagenet_main_arion.py:71] global step:24, loss value: 7.980808
+W1216 12:31:20.194319 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:20.194489 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:20.364564 139767239800576 resnet_imagenet_main_arion.py:71] global step:25, loss value: 6.971075
+W1216 12:31:20.364842 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:20.365140 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:20.548243 139767239800576 resnet_imagenet_main_arion.py:71] global step:26, loss value: 6.998207
+W1216 12:31:20.548543 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:20.548879 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:20.730201 139767239800576 resnet_imagenet_main_arion.py:71] global step:27, loss value: 7.656894
+W1216 12:31:20.730453 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:20.730731 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:20.915657 139767239800576 resnet_imagenet_main_arion.py:71] global step:28, loss value: 7.907942
+W1216 12:31:20.915895 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:20.916108 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:21.090667 139767239800576 resnet_imagenet_main_arion.py:71] global step:29, loss value: 7.133572
+W1216 12:31:21.090962 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:21.091242 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:21.269132 139767239800576 resnet_imagenet_main_arion.py:71] global step:30, loss value: 7.659211
+W1216 12:31:21.269392 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:21.269636 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:21.444960 139767239800576 resnet_imagenet_main_arion.py:71] global step:31, loss value: 7.328841
+W1216 12:31:21.445232 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:21.445472 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:21.617423 139767239800576 resnet_imagenet_main_arion.py:71] global step:32, loss value: 7.400814
+W1216 12:31:21.617691 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:21.617982 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:21.799171 139767239800576 resnet_imagenet_main_arion.py:71] global step:33, loss value: 7.435430
+W1216 12:31:21.799467 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:21.799749 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:21.992485 139767239800576 resnet_imagenet_main_arion.py:71] global step:34, loss value: 7.287718
+W1216 12:31:21.992773 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:21.993052 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:22.179744 139767239800576 resnet_imagenet_main_arion.py:71] global step:35, loss value: 7.671524
+W1216 12:31:22.180024 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:22.180283 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:22.359957 139767239800576 resnet_imagenet_main_arion.py:71] global step:36, loss value: 7.570220
+W1216 12:31:22.360236 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:22.360499 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:22.536794 139767239800576 resnet_imagenet_main_arion.py:71] global step:37, loss value: 7.220433
+W1216 12:31:22.537089 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:22.537397 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:22.728434 139767239800576 resnet_imagenet_main_arion.py:71] global step:38, loss value: 7.032784
+W1216 12:31:22.728645 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:22.728832 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:22.905782 139767239800576 resnet_imagenet_main_arion.py:71] global step:39, loss value: 7.259446
+W1216 12:31:22.906057 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:22.906317 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:23.082715 139767239800576 resnet_imagenet_main_arion.py:71] global step:40, loss value: 7.166922
+W1216 12:31:23.082925 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:23.083122 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:23.265742 139767239800576 resnet_imagenet_main_arion.py:71] global step:41, loss value: 7.275736
+W1216 12:31:23.266053 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:23.266405 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:23.447382 139767239800576 resnet_imagenet_main_arion.py:71] global step:42, loss value: 7.020062
+W1216 12:31:23.447635 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:23.447863 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:23.620754 139767239800576 resnet_imagenet_main_arion.py:71] global step:43, loss value: 6.815957
+W1216 12:31:23.621022 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:23.621304 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:23.792491 139767239800576 resnet_imagenet_main_arion.py:71] global step:44, loss value: 7.063427
+W1216 12:31:23.792707 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:23.792891 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:23.967593 139767239800576 resnet_imagenet_main_arion.py:71] global step:45, loss value: 6.937200
+W1216 12:31:23.967878 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:23.968138 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:24.145737 139767239800576 resnet_imagenet_main_arion.py:71] global step:46, loss value: 7.214956
+W1216 12:31:24.146032 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:24.146319 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:24.314407 139767239800576 resnet_imagenet_main_arion.py:71] global step:47, loss value: 7.006216
+W1216 12:31:24.314663 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:24.314890 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:24.481908 139767239800576 resnet_imagenet_main_arion.py:71] global step:48, loss value: 7.203893
+W1216 12:31:24.482165 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:24.482401 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:24.646188 139767239800576 resnet_imagenet_main_arion.py:71] global step:49, loss value: 7.163739
+W1216 12:31:24.646439 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:24.646667 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:24.826334 139767239800576 resnet_imagenet_main_arion.py:71] global step:50, loss value: 7.120578
+W1216 12:31:24.826543 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:24.826725 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:25.012109 139767239800576 resnet_imagenet_main_arion.py:71] global step:51, loss value: 7.087134
+W1216 12:31:25.012385 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:25.012649 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:25.179498 139767239800576 resnet_imagenet_main_arion.py:71] global step:52, loss value: 6.918123
+W1216 12:31:25.179755 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:25.179990 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:25.349266 139767239800576 resnet_imagenet_main_arion.py:71] global step:53, loss value: 7.184558
+W1216 12:31:25.349511 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:25.349745 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:25.529808 139767239800576 resnet_imagenet_main_arion.py:71] global step:54, loss value: 6.970721
+W1216 12:31:25.530093 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:25.530375 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:25.707811 139767239800576 resnet_imagenet_main_arion.py:71] global step:55, loss value: 6.872083
+W1216 12:31:25.708019 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:25.708193 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:25.894764 139767239800576 resnet_imagenet_main_arion.py:71] global step:56, loss value: 6.700083
+W1216 12:31:25.895076 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:25.895389 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:26.060130 139767239800576 resnet_imagenet_main_arion.py:71] global step:57, loss value: 6.684071
+W1216 12:31:26.060415 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:26.060695 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:26.246569 139767239800576 resnet_imagenet_main_arion.py:71] global step:58, loss value: 6.900342
+W1216 12:31:26.246776 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:26.246947 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:26.421595 139767239800576 resnet_imagenet_main_arion.py:71] global step:59, loss value: 7.186714
+W1216 12:31:26.421802 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:26.421972 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:26.597001 139767239800576 resnet_imagenet_main_arion.py:71] global step:60, loss value: 6.987599
+W1216 12:31:26.597226 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:26.597395 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:26.777535 139767239800576 resnet_imagenet_main_arion.py:71] global step:61, loss value: 7.264243
+W1216 12:31:26.777743 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:26.777911 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:26.949833 139767239800576 resnet_imagenet_main_arion.py:71] global step:62, loss value: 7.065692
+W1216 12:31:26.950039 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:26.950255 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:27.123228 139767239800576 resnet_imagenet_main_arion.py:71] global step:63, loss value: 7.034962
+W1216 12:31:27.123434 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:27.123602 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:27.304824 139767239800576 resnet_imagenet_main_arion.py:71] global step:64, loss value: 6.813464
+W1216 12:31:27.305059 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:27.305308 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:27.489403 139767239800576 resnet_imagenet_main_arion.py:71] global step:65, loss value: 6.999053
+W1216 12:31:27.489686 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:27.489967 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:27.659189 139767239800576 resnet_imagenet_main_arion.py:71] global step:66, loss value: 6.831728
+W1216 12:31:27.659481 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:27.659769 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:27.840734 139767239800576 resnet_imagenet_main_arion.py:71] global step:67, loss value: 6.995896
+W1216 12:31:27.840988 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:27.841244 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:28.023153 139767239800576 resnet_imagenet_main_arion.py:71] global step:68, loss value: 7.113585
+W1216 12:31:28.023395 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:28.023614 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:28.200826 139767239800576 resnet_imagenet_main_arion.py:71] global step:69, loss value: 6.908733
+W1216 12:31:28.201037 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:28.201228 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:28.388001 139767239800576 resnet_imagenet_main_arion.py:71] global step:70, loss value: 6.762072
+W1216 12:31:28.388279 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:28.388543 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:28.568928 139767239800576 resnet_imagenet_main_arion.py:71] global step:71, loss value: 6.893304
+W1216 12:31:28.569154 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:28.569323 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:28.748215 139767239800576 resnet_imagenet_main_arion.py:71] global step:72, loss value: 6.916155
+W1216 12:31:28.748420 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:28.748587 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:28.932343 139767239800576 resnet_imagenet_main_arion.py:71] global step:73, loss value: 6.800365
+W1216 12:31:28.932620 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:28.932894 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:29.109932 139767239800576 resnet_imagenet_main_arion.py:71] global step:74, loss value: 7.083595
+W1216 12:31:29.110150 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:29.110337 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:29.289563 139767239800576 resnet_imagenet_main_arion.py:71] global step:75, loss value: 7.064384
+W1216 12:31:29.289772 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:29.289953 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:29.466873 139767239800576 resnet_imagenet_main_arion.py:71] global step:76, loss value: 6.975639
+W1216 12:31:29.467135 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:29.467381 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:29.635474 139767239800576 resnet_imagenet_main_arion.py:71] global step:77, loss value: 6.988079
+W1216 12:31:29.635683 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:29.635855 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:29.807040 139767239800576 resnet_imagenet_main_arion.py:71] global step:78, loss value: 6.975810
+I1216 12:31:29.807248 139767239800576 resnet_imagenet_main_arion.py:79] global step:78, time_taken: 85.638114,examples_per_second: 29.145901
+I1216 12:31:29.807350 139767239800576 resnet_imagenet_main_arion.py:87] epoch':0, 'time_taken': 85.638236
+W1216 12:31:29.807534 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:29.807803 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:29.974784 139767239800576 resnet_imagenet_main_arion.py:71] global step:79, loss value: 6.755859
+W1216 12:31:29.975032 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:29.975259 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:30.152642 139767239800576 resnet_imagenet_main_arion.py:71] global step:80, loss value: 6.670509
+W1216 12:31:30.152848 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:30.153021 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:30.312222 139767239800576 resnet_imagenet_main_arion.py:71] global step:81, loss value: 6.678774
+W1216 12:31:30.312430 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:30.312614 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:30.478075 139767239800576 resnet_imagenet_main_arion.py:71] global step:82, loss value: 6.683162
+W1216 12:31:30.478282 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:30.478448 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:30.662630 139767239800576 resnet_imagenet_main_arion.py:71] global step:83, loss value: 6.782916
+W1216 12:31:30.662833 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:30.663002 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:30.844935 139767239800576 resnet_imagenet_main_arion.py:71] global step:84, loss value: 6.779830
+W1216 12:31:30.845248 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:30.845550 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:31.021301 139767239800576 resnet_imagenet_main_arion.py:71] global step:85, loss value: 6.707641
+W1216 12:31:31.021574 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:31.021830 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:31.200960 139767239800576 resnet_imagenet_main_arion.py:71] global step:86, loss value: 6.719263
+W1216 12:31:31.201186 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:31.201364 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:31.380754 139767239800576 resnet_imagenet_main_arion.py:71] global step:87, loss value: 6.904109
+W1216 12:31:31.380961 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:31.381153 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:31.547444 139767239800576 resnet_imagenet_main_arion.py:71] global step:88, loss value: 6.540812
+W1216 12:31:31.547671 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:31.547900 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:31.722781 139767239800576 resnet_imagenet_main_arion.py:71] global step:89, loss value: 6.808321
+W1216 12:31:31.723075 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:31.723368 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:31.906751 139767239800576 resnet_imagenet_main_arion.py:71] global step:90, loss value: 6.745142
+W1216 12:31:31.907019 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:31.907276 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:32.091320 139767239800576 resnet_imagenet_main_arion.py:71] global step:91, loss value: 6.502170
+W1216 12:31:32.091564 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:32.091739 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:32.266895 139767239800576 resnet_imagenet_main_arion.py:71] global step:92, loss value: 6.656664
+W1216 12:31:32.267103 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:32.267281 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:32.446950 139767239800576 resnet_imagenet_main_arion.py:71] global step:93, loss value: 6.813449
+W1216 12:31:32.447229 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:32.447496 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:32.617873 139767239800576 resnet_imagenet_main_arion.py:71] global step:94, loss value: 6.830950
+W1216 12:31:32.618158 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:32.618439 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:32.806372 139767239800576 resnet_imagenet_main_arion.py:71] global step:95, loss value: 6.699989
+W1216 12:31:32.806636 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:32.806866 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:32.974519 139767239800576 resnet_imagenet_main_arion.py:71] global step:96, loss value: 6.727768
+W1216 12:31:32.974811 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:32.975054 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:33.150267 139767239800576 resnet_imagenet_main_arion.py:71] global step:97, loss value: 6.843557
+W1216 12:31:33.150515 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:33.150743 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:33.328664 139767239800576 resnet_imagenet_main_arion.py:71] global step:98, loss value: 6.933633
+W1216 12:31:33.328962 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:33.329279 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:33.514316 139767239800576 resnet_imagenet_main_arion.py:71] global step:99, loss value: 7.031610
+W1216 12:31:33.514613 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:33.514907 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:33.700914 139767239800576 resnet_imagenet_main_arion.py:71] global step:100, loss value: 6.468234
+W1216 12:31:33.701236 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:33.701531 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:33.882390 139767239800576 resnet_imagenet_main_arion.py:71] global step:101, loss value: 6.779803
+W1216 12:31:33.882688 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:33.882984 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:34.061679 139767239800576 resnet_imagenet_main_arion.py:71] global step:102, loss value: 6.864583
+W1216 12:31:34.061890 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:34.062061 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:34.238447 139767239800576 resnet_imagenet_main_arion.py:71] global step:103, loss value: 6.711005
+W1216 12:31:34.238663 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:34.238832 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:34.425313 139767239800576 resnet_imagenet_main_arion.py:71] global step:104, loss value: 6.835706
+W1216 12:31:34.425615 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:34.425907 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:34.601413 139767239800576 resnet_imagenet_main_arion.py:71] global step:105, loss value: 6.802714
+W1216 12:31:34.601656 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:34.601877 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:34.781902 139767239800576 resnet_imagenet_main_arion.py:71] global step:106, loss value: 6.791586
+W1216 12:31:34.782154 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:34.782380 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:34.957712 139767239800576 resnet_imagenet_main_arion.py:71] global step:107, loss value: 6.759581
+W1216 12:31:34.958014 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:34.958309 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:35.142007 139767239800576 resnet_imagenet_main_arion.py:71] global step:108, loss value: 6.702147
+W1216 12:31:35.142316 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:35.142630 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:35.323231 139767239800576 resnet_imagenet_main_arion.py:71] global step:109, loss value: 6.774061
+W1216 12:31:35.323524 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:35.323806 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:35.502674 139767239800576 resnet_imagenet_main_arion.py:71] global step:110, loss value: 6.915238
+W1216 12:31:35.502882 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:35.503051 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:35.681771 139767239800576 resnet_imagenet_main_arion.py:71] global step:111, loss value: 6.873449
+W1216 12:31:35.682064 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:35.682347 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:35.853999 139767239800576 resnet_imagenet_main_arion.py:71] global step:112, loss value: 6.914678
+W1216 12:31:35.854208 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:35.854387 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:36.036615 139767239800576 resnet_imagenet_main_arion.py:71] global step:113, loss value: 6.803740
+W1216 12:31:36.036923 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:36.037259 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:36.213610 139767239800576 resnet_imagenet_main_arion.py:71] global step:114, loss value: 6.783949
+W1216 12:31:36.213819 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:36.213989 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:36.392243 139767239800576 resnet_imagenet_main_arion.py:71] global step:115, loss value: 6.905831
+W1216 12:31:36.392452 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:36.392622 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:36.561660 139767239800576 resnet_imagenet_main_arion.py:71] global step:116, loss value: 6.639132
+W1216 12:31:36.561869 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:36.562039 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:36.743905 139767239800576 resnet_imagenet_main_arion.py:71] global step:117, loss value: 6.826285
+W1216 12:31:36.744183 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:36.744441 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:36.920027 139767239800576 resnet_imagenet_main_arion.py:71] global step:118, loss value: 6.785251
+W1216 12:31:36.920236 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:36.920417 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:37.087837 139767239800576 resnet_imagenet_main_arion.py:71] global step:119, loss value: 6.797997
+W1216 12:31:37.088046 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:37.088217 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:37.268801 139767239800576 resnet_imagenet_main_arion.py:71] global step:120, loss value: 6.882591
+W1216 12:31:37.269009 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:37.269191 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:37.441029 139767239800576 resnet_imagenet_main_arion.py:71] global step:121, loss value: 6.672352
+W1216 12:31:37.441250 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:37.441420 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:37.614178 139767239800576 resnet_imagenet_main_arion.py:71] global step:122, loss value: 6.854024
+W1216 12:31:37.614386 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:37.614553 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:37.791973 139767239800576 resnet_imagenet_main_arion.py:71] global step:123, loss value: 6.857762
+W1216 12:31:37.792283 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:37.792591 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:37.967372 139767239800576 resnet_imagenet_main_arion.py:71] global step:124, loss value: 6.860678
+W1216 12:31:37.967583 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:37.967752 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:38.159243 139767239800576 resnet_imagenet_main_arion.py:71] global step:125, loss value: 6.865091
+W1216 12:31:38.159538 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:38.159832 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:38.352628 139767239800576 resnet_imagenet_main_arion.py:71] global step:126, loss value: 6.741794
+W1216 12:31:38.352835 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:38.353030 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:38.527302 139767239800576 resnet_imagenet_main_arion.py:71] global step:127, loss value: 6.905360
+W1216 12:31:38.527508 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:38.527675 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:38.700718 139767239800576 resnet_imagenet_main_arion.py:71] global step:128, loss value: 6.821638
+W1216 12:31:38.700927 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:38.701110 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:38.865812 139767239800576 resnet_imagenet_main_arion.py:71] global step:129, loss value: 6.875903
+W1216 12:31:38.866018 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:38.866188 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:39.029421 139767239800576 resnet_imagenet_main_arion.py:71] global step:130, loss value: 6.854903
+W1216 12:31:39.029631 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:39.029802 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:39.200443 139767239800576 resnet_imagenet_main_arion.py:71] global step:131, loss value: 6.714270
+W1216 12:31:39.200649 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:39.200867 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:39.381112 139767239800576 resnet_imagenet_main_arion.py:71] global step:132, loss value: 6.887771
+W1216 12:31:39.381321 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:39.381491 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:39.553771 139767239800576 resnet_imagenet_main_arion.py:71] global step:133, loss value: 6.677094
+W1216 12:31:39.553979 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:39.554156 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:39.735580 139767239800576 resnet_imagenet_main_arion.py:71] global step:134, loss value: 7.054459
+W1216 12:31:39.735788 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:39.735958 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:39.908434 139767239800576 resnet_imagenet_main_arion.py:71] global step:135, loss value: 6.811149
+W1216 12:31:39.908644 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:39.908821 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:40.094097 139767239800576 resnet_imagenet_main_arion.py:71] global step:136, loss value: 6.773242
+W1216 12:31:40.094302 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:40.094476 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:40.257121 139767239800576 resnet_imagenet_main_arion.py:71] global step:137, loss value: 6.890048
+W1216 12:31:40.257337 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:40.257521 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:40.426549 139767239800576 resnet_imagenet_main_arion.py:71] global step:138, loss value: 6.818791
+W1216 12:31:40.426756 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:40.426927 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:40.606140 139767239800576 resnet_imagenet_main_arion.py:71] global step:139, loss value: 6.945843
+W1216 12:31:40.606344 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:40.606519 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:40.784497 139767239800576 resnet_imagenet_main_arion.py:71] global step:140, loss value: 6.993937
+W1216 12:31:40.784706 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:40.784876 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:40.949643 139767239800576 resnet_imagenet_main_arion.py:71] global step:141, loss value: 6.739496
+W1216 12:31:40.949853 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:40.950024 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:41.120864 139767239800576 resnet_imagenet_main_arion.py:71] global step:142, loss value: 6.849141
+W1216 12:31:41.121117 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:41.121331 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:41.293962 139767239800576 resnet_imagenet_main_arion.py:71] global step:143, loss value: 6.907242
+W1216 12:31:41.294234 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:41.294493 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:41.469824 139767239800576 resnet_imagenet_main_arion.py:71] global step:144, loss value: 6.921074
+W1216 12:31:41.470031 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:41.470204 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:41.642859 139767239800576 resnet_imagenet_main_arion.py:71] global step:145, loss value: 6.846224
+W1216 12:31:41.643078 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:41.643248 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:41.818671 139767239800576 resnet_imagenet_main_arion.py:71] global step:146, loss value: 6.961296
+W1216 12:31:41.818913 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:41.819171 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:41.992614 139767239800576 resnet_imagenet_main_arion.py:71] global step:147, loss value: 6.900489
+W1216 12:31:41.992817 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:41.992984 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:42.172446 139767239800576 resnet_imagenet_main_arion.py:71] global step:148, loss value: 6.919065
+W1216 12:31:42.172654 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:42.172824 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:42.353291 139767239800576 resnet_imagenet_main_arion.py:71] global step:149, loss value: 6.828147
+W1216 12:31:42.353587 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:42.353893 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:42.530831 139767239800576 resnet_imagenet_main_arion.py:71] global step:150, loss value: 6.828334
+W1216 12:31:42.531108 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:42.531377 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:42.699721 139767239800576 resnet_imagenet_main_arion.py:71] global step:151, loss value: 6.756432
+W1216 12:31:42.699973 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:42.700201 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:42.882458 139767239800576 resnet_imagenet_main_arion.py:71] global step:152, loss value: 6.903454
+W1216 12:31:42.882707 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:42.882947 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:43.058262 139767239800576 resnet_imagenet_main_arion.py:71] global step:153, loss value: 6.719408
+W1216 12:31:43.058468 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:43.058636 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:43.232345 139767239800576 resnet_imagenet_main_arion.py:71] global step:154, loss value: 6.903107
+W1216 12:31:43.232551 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:43.232718 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:43.404727 139767239800576 resnet_imagenet_main_arion.py:71] global step:155, loss value: 6.790676
+W1216 12:31:43.404932 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:43.405114 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:43.583781 139767239800576 resnet_imagenet_main_arion.py:71] global step:156, loss value: 6.814164
+I1216 12:31:43.583922 139767239800576 resnet_imagenet_main_arion.py:79] global step:156, time_taken: 13.776692,examples_per_second: 181.175563
+I1216 12:31:43.583981 139767239800576 resnet_imagenet_main_arion.py:87] epoch':1, 'time_taken': 13.776551
+W1216 12:31:43.584105 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:43.584278 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:43.752709 139767239800576 resnet_imagenet_main_arion.py:71] global step:157, loss value: 6.807233
+W1216 12:31:43.752978 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:43.753267 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:43.922868 139767239800576 resnet_imagenet_main_arion.py:71] global step:158, loss value: 6.653513
+W1216 12:31:43.923077 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:43.923252 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:44.091096 139767239800576 resnet_imagenet_main_arion.py:71] global step:159, loss value: 6.738669
+W1216 12:31:44.091341 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:44.091571 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:44.271065 139767239800576 resnet_imagenet_main_arion.py:71] global step:160, loss value: 6.759946
+W1216 12:31:44.271272 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:44.271440 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:44.441208 139767239800576 resnet_imagenet_main_arion.py:71] global step:161, loss value: 6.750159
+W1216 12:31:44.441413 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:44.441587 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:44.617925 139767239800576 resnet_imagenet_main_arion.py:71] global step:162, loss value: 6.975216
+W1216 12:31:44.618215 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:44.618513 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:44.782854 139767239800576 resnet_imagenet_main_arion.py:71] global step:163, loss value: 6.457170
+W1216 12:31:44.783064 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:44.783235 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:44.944891 139767239800576 resnet_imagenet_main_arion.py:71] global step:164, loss value: 6.600905
+W1216 12:31:44.945158 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:44.945408 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:45.120740 139767239800576 resnet_imagenet_main_arion.py:71] global step:165, loss value: 6.810780
+W1216 12:31:45.120980 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:45.121222 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:45.289089 139767239800576 resnet_imagenet_main_arion.py:71] global step:166, loss value: 6.612167
+W1216 12:31:45.289341 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:45.289563 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:45.468553 139767239800576 resnet_imagenet_main_arion.py:71] global step:167, loss value: 6.784003
+W1216 12:31:45.468759 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:45.468937 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:45.630749 139767239800576 resnet_imagenet_main_arion.py:71] global step:168, loss value: 6.889445
+W1216 12:31:45.630954 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:45.631131 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:45.808664 139767239800576 resnet_imagenet_main_arion.py:71] global step:169, loss value: 6.918488
+W1216 12:31:45.808868 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:45.809056 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:45.984475 139767239800576 resnet_imagenet_main_arion.py:71] global step:170, loss value: 6.704760
+W1216 12:31:46.210362 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:46.210729 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:46.384387 139767239800576 resnet_imagenet_main_arion.py:71] global step:171, loss value: 6.770169
+W1216 12:31:46.384643 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:46.384893 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:46.548503 139767239800576 resnet_imagenet_main_arion.py:71] global step:172, loss value: 6.743750
+W1216 12:31:46.548710 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:46.548881 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:46.719594 139767239800576 resnet_imagenet_main_arion.py:71] global step:173, loss value: 6.618021
+W1216 12:31:46.719879 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:46.720158 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:46.893859 139767239800576 resnet_imagenet_main_arion.py:71] global step:174, loss value: 6.695109
+W1216 12:31:46.894140 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:46.894426 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:47.072306 139767239800576 resnet_imagenet_main_arion.py:71] global step:175, loss value: 6.826777
+W1216 12:31:47.072594 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:47.072872 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:47.254230 139767239800576 resnet_imagenet_main_arion.py:71] global step:176, loss value: 6.856243
+W1216 12:31:47.254517 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:47.254828 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:47.441994 139767239800576 resnet_imagenet_main_arion.py:71] global step:177, loss value: 6.813691
+W1216 12:31:47.442301 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:47.442600 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:47.611919 139767239800576 resnet_imagenet_main_arion.py:71] global step:178, loss value: 6.751963
+W1216 12:31:47.612200 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:47.612475 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:47.805723 139767239800576 resnet_imagenet_main_arion.py:71] global step:179, loss value: 6.779225
+W1216 12:31:47.805960 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:47.806153 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:47.984020 139767239800576 resnet_imagenet_main_arion.py:71] global step:180, loss value: 6.839014
+W1216 12:31:47.984333 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:47.984631 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:48.160857 139767239800576 resnet_imagenet_main_arion.py:71] global step:181, loss value: 6.888910
+W1216 12:31:48.161120 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:48.161357 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:48.342978 139767239800576 resnet_imagenet_main_arion.py:71] global step:182, loss value: 6.915680
+W1216 12:31:48.343221 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:48.343470 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:48.515031 139767239800576 resnet_imagenet_main_arion.py:71] global step:183, loss value: 6.799936
+W1216 12:31:48.515240 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:48.515436 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:48.700337 139767239800576 resnet_imagenet_main_arion.py:71] global step:184, loss value: 6.726866
+W1216 12:31:48.700612 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:48.700860 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:48.875008 139767239800576 resnet_imagenet_main_arion.py:71] global step:185, loss value: 6.938022
+W1216 12:31:48.875239 139767239800576 graph_transformer.py:164] Fetch sparse_categorical_crossentropy/weighted_loss/value:0 is remapped to Arion-Replica-0/sparse_categorical_crossentropy/weighted_loss/value:0
+W1216 12:31:48.875458 139767239800576 graph_transformer.py:160] Fetch Adam/Adam/AssignAddVariableOp is remapped to all replicas
+I1216 12:31:49.135142 139767239800576 coordinator.py:62] Joining workers...
+I1216 12:31:49.135336 139767239800576 cluster.py:173] Terminating cluster...
